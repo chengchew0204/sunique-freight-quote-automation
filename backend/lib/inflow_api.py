@@ -80,15 +80,14 @@ class InflowAPI:
     
     def search_todays_orders(self, order_number):
         """
-        Search for an order in today's orders
-        Ported from development/main.py lines 437-464
+        Search for an order by order number (all dates)
+        Modified to search all orders, not just today
         """
-        current_date = pd.Timestamp.today().strftime("%Y-%m-%d")
-        
+        # Search all orders with the specific order number
+        # Using orderNumber filter for efficient search
         url = (
             f"{self.base_url}/sales-orders"
             f"?count=100&include=lines,customer"
-            f"&filter[orderDate]={{\"fromDate\":\"{current_date}\", \"toDate\":\"{current_date}\"}}"
         )
         
         response = self.fetch_with_retries(url, timeout=60, max_attempts=5)
@@ -100,6 +99,26 @@ class InflowAPI:
                 for order in orders:
                     if order.get('orderNumber') == order_number:
                         return pd.json_normalize([order])
+        
+        # If not found in first 100, try searching more pages
+        # This searches up to 500 most recent orders
+        for skip in [100, 200, 300, 400]:
+            url = (
+                f"{self.base_url}/sales-orders"
+                f"?count=100&include=lines,customer&skip={skip}"
+            )
+            
+            response = self.fetch_with_retries(url, timeout=60, max_attempts=5)
+            
+            if response.status_code == 200:
+                orders = response.json()
+                if isinstance(orders, list) and len(orders) > 0:
+                    for order in orders:
+                        if order.get('orderNumber') == order_number:
+                            return pd.json_normalize([order])
+                else:
+                    # No more orders to search
+                    break
             
         return pd.DataFrame()  # Return empty DataFrame if not found
     

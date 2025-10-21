@@ -98,7 +98,7 @@ def get_quote():
         order_df = inflow_api.search_todays_orders(order_number)
         
         if order_df.empty:
-            return jsonify({'error': f'Order "{order_number}" not found in today\'s orders'}), 404
+            return jsonify({'error': f'Order "{order_number}" not found in inFlow'}), 404
         
         # Step 2: Process products
         products_df = inflow_api.process_order_products(order_df)
