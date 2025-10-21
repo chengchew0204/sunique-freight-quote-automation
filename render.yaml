@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: sunique-freight-api
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: "cd backend && pip install -r requirements.txt"
+    startCommand: "cd backend && gunicorn app:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.18
+      - key: INFLOW_COMPANY_ID
+        sync: false
+      - key: INFLOW_API_KEY
+        sync: false
+      - key: CHR_CLIENT_ID
+        sync: false
+      - key: CHR_CLIENT_SECRET
+        sync: false
+      - key: CHR_CUSTOMER_CODE
+        sync: false
+      - key: CHR_ENVIRONMENT
+        value: sandbox
+
