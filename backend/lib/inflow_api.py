@@ -81,11 +81,45 @@ class InflowAPI:
     def search_todays_orders(self, order_number):
         """
         Search for an order by order number
-        Searches extensively through orders to find match
+        Uses inFlow API filter to search efficiently
         """
-        # Try searching with orderNumber in the URL (more efficient if API supports it)
-        # Search up to 2000 most recent orders to ensure we find it
-        for skip in range(0, 2000, 100):
+        # Try using orderNumber filter directly (most efficient)
+        url = (
+            f"{self.base_url}/sales-orders"
+            f"?count=100&include=lines,customer"
+            f"&filter[orderNumber]={order_number}"
+        )
+        
+        try:
+            print(f"Searching for order: {order_number}")
+            response = self.fetch_with_retries(url, timeout=60, max_attempts=5)
+            
+            if response.status_code == 200:
+                orders = response.json()
+                print(f"Response type: {type(orders)}, length: {len(orders) if isinstance(orders, list) else 'N/A'}")
+                
+                # Handle both single object and array responses
+                if isinstance(orders, dict):
+                    # Single order returned
+                    if orders.get('orderNumber', '').upper() == order_number.upper():
+                        print(f"Found order {order_number} (single result)")
+                        return pd.json_normalize([orders])
+                elif isinstance(orders, list):
+                    # Array of orders
+                    if len(orders) > 0:
+                        # Filter might return exact match or similar matches
+                        for order in orders:
+                            if order.get('orderNumber', '').upper() == order_number.upper():
+                                print(f"Found order {order_number} in results")
+                                return pd.json_normalize([order])
+            else:
+                print(f"Filter search failed, status={response.status_code}")
+        except Exception as e:
+            print(f"Error with filtered search: {e}")
+        
+        # Fallback: Search through recent orders if filter doesn't work
+        print(f"Filter search didn't find order, trying pagination...")
+        for skip in range(0, 1000, 100):
             url = (
                 f"{self.base_url}/sales-orders"
                 f"?count=100&include=lines,customer&skip={skip}"
@@ -98,28 +132,23 @@ class InflowAPI:
                     orders = response.json()
                     if isinstance(orders, list):
                         if len(orders) == 0:
-                            # No more orders to search
+                            print(f"No more orders at skip={skip}")
                             break
                         
-                        # Find the order with matching order number (case-insensitive)
                         for order in orders:
                             if order.get('orderNumber', '').upper() == order_number.upper():
                                 print(f"Found order {order_number} at skip={skip}")
                                 return pd.json_normalize([order])
-                    else:
-                        # Single object returned (shouldn't happen with this endpoint)
-                        if orders.get('orderNumber', '').upper() == order_number.upper():
-                            return pd.json_normalize([orders])
                 else:
                     print(f"Search failed at skip={skip}, status={response.status_code}")
                     break
                     
             except Exception as e:
                 print(f"Error searching at skip={skip}: {e}")
-                # Continue to next page despite error
                 continue
-            
-        return pd.DataFrame()  # Return empty DataFrame if not found
+        
+        print(f"Order {order_number} not found after exhaustive search")
+        return pd.DataFrame()
     
     def get_product_details(self, product_id):
         """
