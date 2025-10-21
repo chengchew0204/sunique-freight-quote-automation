@@ -3,8 +3,10 @@
 // ============================================
 
 const CONFIG = {
-    // API endpoint for Netlify serverless function
-    apiEndpoint: '/.netlify/functions/quote'
+    // API endpoint - UPDATE THIS with your Render.com URL after deployment
+    // Format: https://your-app-name.onrender.com/api/quote
+    apiEndpoint: 'https://sunique-freight-api.onrender.com/api/quote'
+    // Change 'sunique-freight-api' to your actual Render app name
 };
 
 // ============================================
