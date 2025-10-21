@@ -3,10 +3,8 @@
 // ============================================
 
 const CONFIG = {
-    // API endpoint - UPDATE THIS with your Render.com URL after deployment
-    // Format: https://your-app-name.onrender.com/api/quote
-    apiEndpoint: 'https://sunique-freight-api.onrender.com/api/quote'
-    // Change 'sunique-freight-api' to your actual Render app name
+    // API endpoint for Render.com backend
+    apiEndpoint: 'https://sunique-shipping-quote-automation.onrender.com/api/quote'
 };
 
 // ============================================
