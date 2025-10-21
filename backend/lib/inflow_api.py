@@ -80,45 +80,44 @@ class InflowAPI:
     
     def search_todays_orders(self, order_number):
         """
-        Search for an order by order number (all dates)
-        Modified to search all orders, not just today
+        Search for an order by order number
+        Searches extensively through orders to find match
         """
-        # Search all orders with the specific order number
-        # Using orderNumber filter for efficient search
-        url = (
-            f"{self.base_url}/sales-orders"
-            f"?count=100&include=lines,customer"
-        )
-        
-        response = self.fetch_with_retries(url, timeout=60, max_attempts=5)
-        
-        if response.status_code == 200:
-            orders = response.json()
-            if isinstance(orders, list):
-                # Find the order with matching order number
-                for order in orders:
-                    if order.get('orderNumber') == order_number:
-                        return pd.json_normalize([order])
-        
-        # If not found in first 100, try searching more pages
-        # This searches up to 500 most recent orders
-        for skip in [100, 200, 300, 400]:
+        # Try searching with orderNumber in the URL (more efficient if API supports it)
+        # Search up to 2000 most recent orders to ensure we find it
+        for skip in range(0, 2000, 100):
             url = (
                 f"{self.base_url}/sales-orders"
                 f"?count=100&include=lines,customer&skip={skip}"
             )
             
-            response = self.fetch_with_retries(url, timeout=60, max_attempts=5)
-            
-            if response.status_code == 200:
-                orders = response.json()
-                if isinstance(orders, list) and len(orders) > 0:
-                    for order in orders:
-                        if order.get('orderNumber') == order_number:
-                            return pd.json_normalize([order])
+            try:
+                response = self.fetch_with_retries(url, timeout=60, max_attempts=5)
+                
+                if response.status_code == 200:
+                    orders = response.json()
+                    if isinstance(orders, list):
+                        if len(orders) == 0:
+                            # No more orders to search
+                            break
+                        
+                        # Find the order with matching order number (case-insensitive)
+                        for order in orders:
+                            if order.get('orderNumber', '').upper() == order_number.upper():
+                                print(f"Found order {order_number} at skip={skip}")
+                                return pd.json_normalize([order])
+                    else:
+                        # Single object returned (shouldn't happen with this endpoint)
+                        if orders.get('orderNumber', '').upper() == order_number.upper():
+                            return pd.json_normalize([orders])
                 else:
-                    # No more orders to search
+                    print(f"Search failed at skip={skip}, status={response.status_code}")
                     break
+                    
+            except Exception as e:
+                print(f"Error searching at skip={skip}: {e}")
+                # Continue to next page despite error
+                continue
             
         return pd.DataFrame()  # Return empty DataFrame if not found
     
