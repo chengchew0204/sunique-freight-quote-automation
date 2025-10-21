@@ -13,36 +13,38 @@ def select_optimal_quote(quotes):
         quotes: List of quote dictionaries with carrier, total_cost, distance
         
     Returns:
-        dict: Selected quote with markup information
+        dict: Selected quote with markup information (camelCase keys for frontend)
     """
     if len(quotes) == 0:
         raise ValueError('No quotes available')
     
     if len(quotes) == 1:
         quote = quotes[0]
-        markup_rate = 1.3 if quote['total_cost'] > 1000 else 1.2
+        total_cost = quote.get('total_cost', 0)
+        markup_rate = 1.3 if total_cost > 1000 else 1.2
         return {
-            'carrier': quote['carrier'],
-            'baseRate': quote['total_cost'],
-            'markup': quote['total_cost'] * (markup_rate - 1),
-            'finalQuote': quote['total_cost'] * markup_rate,
+            'carrier': quote.get('carrier', 'Unknown'),
+            'baseRate': total_cost,
+            'markup': total_cost * (markup_rate - 1),
+            'finalQuote': total_cost * markup_rate,
             'markupPercentage': (markup_rate - 1) * 100,
-            'distance': quote['distance']
+            'distance': quote.get('distance', 'N/A')
         }
     
     # Sort by total cost
-    sorted_quotes = sorted(quotes, key=lambda x: x['total_cost'])
+    sorted_quotes = sorted(quotes, key=lambda x: x.get('total_cost', 0))
     
     # Select second cheapest
     second_cheapest = sorted_quotes[1] if len(sorted_quotes) > 1 else sorted_quotes[0]
-    markup_rate = 1.3 if second_cheapest['total_cost'] > 1000 else 1.2
+    total_cost = second_cheapest.get('total_cost', 0)
+    markup_rate = 1.3 if total_cost > 1000 else 1.2
     
     return {
-        'carrier': second_cheapest['carrier'],
-        'baseRate': second_cheapest['total_cost'],
-        'markup': second_cheapest['total_cost'] * (markup_rate - 1),
-        'finalQuote': second_cheapest['total_cost'] * markup_rate,
+        'carrier': second_cheapest.get('carrier', 'Unknown'),
+        'baseRate': total_cost,
+        'markup': total_cost * (markup_rate - 1),
+        'finalQuote': total_cost * markup_rate,
         'markupPercentage': (markup_rate - 1) * 100,
-        'distance': second_cheapest['distance']
+        'distance': second_cheapest.get('distance', 'N/A')
     }
 

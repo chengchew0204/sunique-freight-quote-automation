@@ -177,6 +177,17 @@ def get_quote():
                 'originalHeight': pallet['Height']
             })
         
+        # Convert quotes to camelCase for frontend compatibility
+        quotes_camelcase = []
+        for q in quotes:
+            quotes_camelcase.append({
+                'carrier': q.get('carrier', 'Unknown'),
+                'totalCost': q.get('total_cost', 0),
+                'service': q.get('service', 'N/A'),
+                'mode': q.get('mode', 'N/A'),
+                'distance': q.get('distance', 'N/A')
+            })
+        
         response_data = {
             'orderSummary': {
                 'orderNumber': order_number,
@@ -186,7 +197,7 @@ def get_quote():
             },
             'products': products_list,
             'pallets': pallets_list,
-            'quotes': quotes,
+            'quotes': quotes_camelcase,
             'selectedQuote': selected_quote
         }
         
