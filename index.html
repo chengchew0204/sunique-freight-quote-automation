@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunique Freight Quote System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="data/logo.png" alt="Sunique Logo" class="logo">
+                <h1>Freight Quote Calculator</h1>
+            </div>
+        </header>
+
+        <!-- Step 1: Input Form -->
+        <section class="card" id="input-section">
+            <div class="card-header">
+                <div class="header-left">
+                    <i class="fas fa-edit"></i>
+                    <h2>Shipping Information</h2>
+                </div>
+                <img src="data/logo.png" alt="Sunique Logo" class="header-logo">
+            </div>
+            <div class="card-body">
+                <form id="quoteForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="orderNumber">Order Number</label>
+                            <input type="text" id="orderNumber" placeholder="e.g., SO-009537" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="needsAssembly">Assembly Required</label>
+                            <select id="needsAssembly" required>
+                                <option value="no">No (RTA - Ready to Assemble)</option>
+                                <option value="yes">Yes (Assembled)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pickupZip">Pickup ZIP Code</label>
+                            <input type="text" id="pickupZip" pattern="[0-9]{5}" placeholder="12345" maxlength="5" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="destinationZip">Destination ZIP Code</label>
+                            <input type="text" id="destinationZip" pattern="[0-9]{5}" placeholder="67890" maxlength="5" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Delivery Type</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="deliveryType" value="Commercial" checked>
+                                    <span class="radio-custom"></span>
+                                    Commercial
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="deliveryType" value="Residential">
+                                    <span class="radio-custom"></span>
+                                    Residential
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="liftgateService">Liftgate Service</label>
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" id="liftgateService">
+                                <label for="liftgateService" class="checkbox-label">Required</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="pickupDate">Pickup Date</label>
+                            <input type="date" id="pickupDate" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" id="getQuoteBtn" class="btn btn-primary">
+                            <i class="fas fa-calculator"></i> Get Freight Quote
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Step 2: Processing -->
+        <section class="card" id="processing-section" style="display: none;">
+            <div class="card-header">
+                <div class="header-left">
+                    <i class="fas fa-cog fa-spin"></i>
+                    <h2>Processing Quote...</h2>
+                </div>
+                <img src="data/logo.png" alt="Sunique Logo" class="header-logo">
+            </div>
+            <div class="card-body">
+                <div class="progress-container">
+                    <div class="progress-header">
+                        <span class="progress-text" id="progressMessage">Initializing...</span>
+                        <span class="progress-percentage" id="progressPercentage">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                        <div class="progress-steps">
+                            <div class="progress-step" data-step="validate">
+                                <div class="step-marker"></div>
+                                <span class="step-label">Validate</span>
+                            </div>
+                            <div class="progress-step" data-step="fetch">
+                                <div class="step-marker"></div>
+                                <span class="step-label">Fetch</span>
+                            </div>
+                            <div class="progress-step" data-step="dimensions">
+                                <div class="step-marker"></div>
+                                <span class="step-label">Dimensions</span>
+                            </div>
+                            <div class="progress-step" data-step="pallets">
+                                <div class="step-marker"></div>
+                                <span class="step-label">Pallets</span>
+                            </div>
+                            <div class="progress-step" data-step="freight">
+                                <div class="step-marker"></div>
+                                <span class="step-label">Freight</span>
+                            </div>
+                            <div class="progress-step" data-step="quotes">
+                                <div class="step-marker"></div>
+                                <span class="step-label">Quotes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="processing-steps">
+                    <div class="processing-step" id="step-validate">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        <span>Validating input data...</span>
+                    </div>
+                    <div class="processing-step" id="step-fetch">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        <span>Fetching order from inFlow...</span>
+                    </div>
+                    <div class="processing-step" id="step-dimensions">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        <span>Calculating product dimensions...</span>
+                    </div>
+                    <div class="processing-step" id="step-pallets">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        <span>Optimizing pallet configuration...</span>
+                    </div>
+                    <div class="processing-step" id="step-freight">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        <span>Calculating freight classes...</span>
+                    </div>
+                    <div class="processing-step" id="step-quotes">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        <span>Fetching shipping quotes...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 3: Results -->
+        <section class="card" id="results-section" style="display: none;">
+            <div class="card-header">
+                <div class="header-left">
+                    <i class="fas fa-check-circle"></i>
+                    <h2>Quote Results</h2>
+                </div>
+                <img src="data/logo.png" alt="Sunique Logo" class="header-logo">
+            </div>
+            <div class="card-body">
+                <!-- Order Summary -->
+                <div class="results-grid">
+                    <div class="result-item">
+                        <div class="result-label">Order Number</div>
+                        <div class="result-value" id="resultOrderNumber">-</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Total Products</div>
+                        <div class="result-value" id="resultTotalProducts">-</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Total Weight</div>
+                        <div class="result-value" id="resultTotalWeight">-</div>
+                    </div>
+                </div>
+
+                <!-- Pallet Configuration -->
+                <div class="section-separator">
+                    <h3><i class="fas fa-boxes"></i> Pallet Configuration</h3>
+                </div>
+                <div id="palletResults" class="pallet-grid">
+                    <!-- Pallets will be populated here -->
+                </div>
+
+                <!-- Product Details -->
+                <div class="section-separator">
+                    <h3><i class="fas fa-list"></i> Product Details</h3>
+                </div>
+                <div id="productDetails" class="product-details">
+                    <!-- Products will be populated here -->
+                </div>
+
+                <!-- Shipping Quote -->
+                <div class="section-separator">
+                    <h3><i class="fas fa-dollar-sign"></i> Shipping Quote</h3>
+                </div>
+                <div class="quote-breakdown">
+                    <div class="quote-row">
+                        <span class="quote-label">Carrier:</span>
+                        <span class="quote-value" id="resultCarrier">-</span>
+                    </div>
+                    <div class="quote-row">
+                        <span class="quote-label">Base Rate:</span>
+                        <span class="quote-value" id="resultBaseRate">-</span>
+                    </div>
+                    <div class="quote-row markup-row">
+                        <span class="quote-label">Markup (<span id="resultMarkupPercent">-</span>):</span>
+                        <span class="quote-value" id="resultMarkup">-</span>
+                    </div>
+                    <div class="quote-row total-row">
+                        <span class="quote-label">FINAL QUOTE:</span>
+                        <span class="quote-value" id="resultFinalQuote">-</span>
+                    </div>
+                </div>
+
+                <!-- All Quotes -->
+                <div class="section-separator">
+                    <h3><i class="fas fa-chart-bar"></i> All Available Quotes</h3>
+                </div>
+                <div id="allQuotes" class="all-quotes">
+                    <!-- All quotes will be populated here -->
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" id="newQuoteBtn" class="btn btn-secondary">
+                        <i class="fas fa-plus"></i> New Quote
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Error Modal -->
+        <div id="errorModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="header-left">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Error</h3>
+                    </div>
+                    <img src="data/logo.png" alt="Sunique Logo" class="header-logo">
+                    <button class="modal-close" id="closeErrorModal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p id="errorMessage"></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" id="closeErrorBtn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

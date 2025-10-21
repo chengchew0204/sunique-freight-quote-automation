@@ -1,0 +1,33 @@
+[build]
+  # Directory where Netlify Functions are located
+  functions = "netlify/functions"
+  
+  # Directory to publish (root of the site)
+  publish = "."
+  
+  # No build command needed for static site
+  command = ""
+
+[build.environment]
+  # Python version for serverless functions
+  AWS_LAMBDA_PYTHON_VERSION = "3.9"
+
+[functions]
+  # Set Python runtime version
+  node_bundler = "esbuild"
+  
+[[redirects]]
+  # Redirect /api/* to serverless functions
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  force = true
+
+[[headers]]
+  # CORS headers for API endpoints
+  for = "/.netlify/functions/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Headers = "Content-Type"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+

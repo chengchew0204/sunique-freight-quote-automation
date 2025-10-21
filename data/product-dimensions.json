@@ -1,0 +1,3750 @@
+{
+  "assembled": [
+    {
+      "name": "SW-TB09",
+      "productType": "TB09",
+      "length": 24.40944882,
+      "width": 9.3,
+      "height": 35.43307087,
+      "weight": 17.0,
+      "index": 0
+    },
+    {
+      "name": "SW-B12",
+      "productType": "B12",
+      "length": 26.77165354,
+      "width": 12.3,
+      "height": 35.43307087,
+      "weight": 21.3,
+      "index": 0
+    },
+    {
+      "name": "SW-B15",
+      "productType": "B15",
+      "length": 24.40944882,
+      "width": 15.3,
+      "height": 35.43307087,
+      "weight": 23.4,
+      "index": 0
+    },
+    {
+      "name": "SW-B18",
+      "productType": "B18",
+      "length": 24.40944882,
+      "width": 18.3,
+      "height": 35.43307087,
+      "weight": 25.1,
+      "index": 0
+    },
+    {
+      "name": "SW-B21",
+      "productType": "B21",
+      "length": 24.40944882,
+      "width": 21.3,
+      "height": 35.43307087,
+      "weight": 27.7,
+      "index": 0
+    },
+    {
+      "name": "SW-B24",
+      "productType": "B24",
+      "length": 26.77165354,
+      "width": 24.3,
+      "height": 35.43307087,
+      "weight": 29.0,
+      "index": 0
+    },
+    {
+      "name": "SW-B27",
+      "productType": "B27",
+      "length": 28.34645669,
+      "width": 27.3,
+      "height": 35.43307087,
+      "weight": 31.2,
+      "index": 0
+    },
+    {
+      "name": "SW-B30",
+      "productType": "B30",
+      "length": 31.1023622,
+      "width": 30.3,
+      "height": 35.43307087,
+      "weight": 33.85,
+      "index": 0
+    },
+    {
+      "name": "SW-B33",
+      "productType": "B33",
+      "length": 31.1023622,
+      "width": 33.3,
+      "height": 35.43307087,
+      "weight": 39.85,
+      "index": 0
+    },
+    {
+      "name": "SW-B36",
+      "productType": "B36",
+      "length": 31.1023622,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 42.5,
+      "index": 0
+    },
+    {
+      "name": "SW-B42",
+      "productType": "B42",
+      "length": 31.1023622,
+      "width": 42.3,
+      "height": 42.91338583,
+      "weight": 47.2,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB12",
+      "productType": "3DB12",
+      "length": 24.40944882,
+      "width": 12.3,
+      "height": 35.43307087,
+      "weight": 30.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB15",
+      "productType": "3DB15",
+      "length": 26.77165354,
+      "width": 15.3,
+      "height": 35.43307087,
+      "weight": 32.2,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB18",
+      "productType": "3DB18",
+      "length": 26.77165354,
+      "width": 18.3,
+      "height": 35.43307087,
+      "weight": 34.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB21",
+      "productType": "3DB21",
+      "length": 26.77165354,
+      "width": 21.3,
+      "height": 35.43307087,
+      "weight": 37.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB24",
+      "productType": "3DB24",
+      "length": 26.77165354,
+      "width": 24.3,
+      "height": 35.43307087,
+      "weight": 40.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB27",
+      "productType": "3DB27",
+      "length": 28.34645669,
+      "width": 27.3,
+      "height": 35.43307087,
+      "weight": 43.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB30",
+      "productType": "3DB30",
+      "length": 31.1023622,
+      "width": 30.3,
+      "height": 35.43307087,
+      "weight": 46.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB33",
+      "productType": "3DB33",
+      "length": 31.1023622,
+      "width": 33.3,
+      "height": 35.43307087,
+      "weight": 48.5,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB36",
+      "productType": "3DB36",
+      "length": 31.88976378,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 51.5,
+      "index": 0
+    },
+    {
+      "name": "SW-MB30",
+      "productType": "MB30",
+      "length": 31.1023622,
+      "width": 30.3,
+      "height": 35.43307087,
+      "weight": 18.9,
+      "index": 0
+    },
+    {
+      "name": "SW-SB27",
+      "productType": "SB27",
+      "length": 27.95275591,
+      "width": 27.3,
+      "height": 35.43307087,
+      "weight": 25.5,
+      "index": 0
+    },
+    {
+      "name": "SW-SB30",
+      "productType": "SB30",
+      "length": 31.1023622,
+      "width": 30.3,
+      "height": 35.43307087,
+      "weight": 29.0,
+      "index": 0
+    },
+    {
+      "name": "SW-SB33",
+      "productType": "SB33",
+      "length": 31.1023622,
+      "width": 33.3,
+      "height": 35.43307087,
+      "weight": 30.0,
+      "index": 0
+    },
+    {
+      "name": "SW-SB36",
+      "productType": "SB36",
+      "length": 31.1023622,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 31.3,
+      "index": 0
+    },
+    {
+      "name": "SW-FSB36",
+      "productType": "FSB36",
+      "length": 31.1023622,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 30.3,
+      "index": 0
+    },
+    {
+      "name": "SW-CSB36",
+      "productType": "CSB36",
+      "length": 35.82677165,
+      "width": 36.3,
+      "height": 35.82677165,
+      "weight": 41.18,
+      "index": 0
+    },
+    {
+      "name": "SW-DCSF42",
+      "productType": "DCSF42",
+      "length": 42.51968504,
+      "width": 42.5,
+      "height": 2.362204724,
+      "weight": 8.62,
+      "index": 0
+    },
+    {
+      "name": "SW-SBF4242",
+      "productType": "SBF4242",
+      "length": 42.51968504,
+      "width": 42.5,
+      "height": 1.181102362,
+      "weight": 7.71,
+      "index": 0
+    },
+    {
+      "name": "SW-ERB33",
+      "productType": "ERB33",
+      "length": 36.0,
+      "width": 36.0,
+      "height": 35.43307087,
+      "weight": 46.1,
+      "index": 0
+    },
+    {
+      "name": "SW-ERB36",
+      "productType": "ERB36",
+      "length": 39.0,
+      "width": 39.0,
+      "height": 35.82677165,
+      "weight": 48.5,
+      "index": 0
+    },
+    {
+      "name": "SW-LST",
+      "productType": "LST",
+      "length": 28.5,
+      "width": 28.5,
+      "height": 5.5,
+      "weight": 2.5,
+      "index": 0
+    },
+    {
+      "name": "SW-SPB9",
+      "productType": "SPB9",
+      "length": 35.43307087,
+      "width": 25.6,
+      "height": 9.251968504,
+      "weight": 25.0,
+      "index": 0
+    },
+    {
+      "name": "SW-BWB18",
+      "productType": "BWB18",
+      "length": 24.40944882,
+      "width": 18.3,
+      "height": 35.43307087,
+      "weight": 34.02,
+      "index": 0
+    },
+    {
+      "name": "SW-BBC36",
+      "productType": "BBC36",
+      "length": 36.0,
+      "width": 36.0,
+      "height": 36.81102362,
+      "weight": 31.0,
+      "index": 0
+    },
+    {
+      "name": "SW-BBC39",
+      "productType": "BBC39",
+      "length": 39.0,
+      "width": 39.0,
+      "height": 39.76377953,
+      "weight": 35.3,
+      "index": 0
+    },
+    {
+      "name": "SW-BBC42",
+      "productType": "BBC42",
+      "length": 42.0,
+      "width": 42.0,
+      "height": 42.91338583,
+      "weight": 39.4,
+      "index": 0
+    },
+    {
+      "name": "SW-BES12",
+      "productType": "BES12",
+      "length": 31.1023622,
+      "width": 24.8,
+      "height": 3.149606299,
+      "weight": 11.33,
+      "index": 0
+    },
+    {
+      "name": "SW-W0930",
+      "productType": "W0930",
+      "length": 12.00787402,
+      "width": 9.3,
+      "height": 31.1023622,
+      "weight": 9.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W1230",
+      "productType": "W1230",
+      "length": 12.99212598,
+      "width": 12.3,
+      "height": 31.1023622,
+      "weight": 10.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W1530",
+      "productType": "W1530",
+      "length": 16.14173228,
+      "width": 15.3,
+      "height": 31.1023622,
+      "weight": 13.25,
+      "index": 0
+    },
+    {
+      "name": "SW-W1830",
+      "productType": "W1830",
+      "length": 18.8976378,
+      "width": 18.3,
+      "height": 31.1023622,
+      "weight": 14.85,
+      "index": 0
+    },
+    {
+      "name": "SW-W2130",
+      "productType": "W2130",
+      "length": 22.04724409,
+      "width": 21.3,
+      "height": 31.1023622,
+      "weight": 16.65,
+      "index": 0
+    },
+    {
+      "name": "SW-W2430",
+      "productType": "W2430",
+      "length": 24.80314961,
+      "width": 24.3,
+      "height": 31.1023622,
+      "weight": 19.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W2730",
+      "productType": "W2730",
+      "length": 27.95275591,
+      "width": 27.3,
+      "height": 31.1023622,
+      "weight": 20.45,
+      "index": 0
+    },
+    {
+      "name": "SW-W3030",
+      "productType": "W3030",
+      "length": 31.1023622,
+      "width": 30.3,
+      "height": 31.1023622,
+      "weight": 22.5,
+      "index": 0
+    },
+    {
+      "name": "SW-W3330",
+      "productType": "W3330",
+      "length": 31.1023622,
+      "width": 33.3,
+      "height": 33.66141732,
+      "weight": 24.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3630",
+      "productType": "W3630",
+      "length": 31.1023622,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 26.15,
+      "index": 0
+    },
+    {
+      "name": "SW-W0936",
+      "productType": "W0936",
+      "length": 12.00787402,
+      "width": 9.3,
+      "height": 36.81102362,
+      "weight": 11.45,
+      "index": 0
+    },
+    {
+      "name": "SW-W1236",
+      "productType": "W1236",
+      "length": 12.99212598,
+      "width": 12.3,
+      "height": 36.81102362,
+      "weight": 13.3,
+      "index": 0
+    },
+    {
+      "name": "SW-W1536",
+      "productType": "W1536",
+      "length": 16.14173228,
+      "width": 15.3,
+      "height": 36.81102362,
+      "weight": 14.15,
+      "index": 0
+    },
+    {
+      "name": "SW-W1836",
+      "productType": "W1836",
+      "length": 18.8976378,
+      "width": 18.3,
+      "height": 36.81102362,
+      "weight": 16.6,
+      "index": 0
+    },
+    {
+      "name": "SW-W2136",
+      "productType": "W2136",
+      "length": 22.04724409,
+      "width": 21.3,
+      "height": 36.81102362,
+      "weight": 19.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W2436",
+      "productType": "W2436",
+      "length": 24.80314961,
+      "width": 24.3,
+      "height": 36.81102362,
+      "weight": 21.6,
+      "index": 0
+    },
+    {
+      "name": "SW-W2736",
+      "productType": "W2736",
+      "length": 27.95275591,
+      "width": 27.3,
+      "height": 36.81102362,
+      "weight": 22.8,
+      "index": 0
+    },
+    {
+      "name": "SW-W3036",
+      "productType": "W3036",
+      "length": 31.1023622,
+      "width": 30.3,
+      "height": 36.81102362,
+      "weight": 25.2,
+      "index": 0
+    },
+    {
+      "name": "SW-W3336",
+      "productType": "W3336",
+      "length": 33.85826772,
+      "width": 33.3,
+      "height": 36.81102362,
+      "weight": 27.3,
+      "index": 0
+    },
+    {
+      "name": "SW-W3636",
+      "productType": "W3636",
+      "length": 36.81102362,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 29.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W0942",
+      "productType": "W0942",
+      "length": 12.00787402,
+      "width": 9.3,
+      "height": 42.91338583,
+      "weight": 13.2,
+      "index": 0
+    },
+    {
+      "name": "SW-W1242",
+      "productType": "W1242",
+      "length": 12.99212598,
+      "width": 12.3,
+      "height": 42.91338583,
+      "weight": 14.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W1542",
+      "productType": "W1542",
+      "length": 16.14173228,
+      "width": 15.3,
+      "height": 42.91338583,
+      "weight": 18.55,
+      "index": 0
+    },
+    {
+      "name": "SW-W1842",
+      "productType": "W1842",
+      "length": 18.8976378,
+      "width": 18.3,
+      "height": 42.91338583,
+      "weight": 19.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W2142",
+      "productType": "W2142",
+      "length": 22.04724409,
+      "width": 21.3,
+      "height": 42.91338583,
+      "weight": 21.45,
+      "index": 0
+    },
+    {
+      "name": "SW-W2442",
+      "productType": "W2442",
+      "length": 24.80314961,
+      "width": 24.3,
+      "height": 42.91338583,
+      "weight": 24.8,
+      "index": 0
+    },
+    {
+      "name": "SW-W2742",
+      "productType": "W2742",
+      "length": 27.95275591,
+      "width": 27.3,
+      "height": 42.91338583,
+      "weight": 27.25,
+      "index": 0
+    },
+    {
+      "name": "SW-W3042",
+      "productType": "W3042",
+      "length": 31.1023622,
+      "width": 30.3,
+      "height": 42.91338583,
+      "weight": 29.65,
+      "index": 0
+    },
+    {
+      "name": "SW-W3342",
+      "productType": "W3342",
+      "length": 33.85826772,
+      "width": 33.3,
+      "height": 42.91338583,
+      "weight": 30.75,
+      "index": 0
+    },
+    {
+      "name": "SW-W3642",
+      "productType": "W3642",
+      "length": 36.81102362,
+      "width": 36.3,
+      "height": 42.91338583,
+      "weight": 34.9,
+      "index": 0
+    },
+    {
+      "name": "SW-W3012",
+      "productType": "W3012",
+      "length": 12.99212598,
+      "width": 30.3,
+      "height": 31.1023622,
+      "weight": 10.2,
+      "index": 0
+    },
+    {
+      "name": "SW-W3312",
+      "productType": "W3312",
+      "length": 12.99212598,
+      "width": 33.3,
+      "height": 33.85826772,
+      "weight": 11.6,
+      "index": 0
+    },
+    {
+      "name": "SW-W3612",
+      "productType": "W3612",
+      "length": 12.99212598,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 11.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W3015",
+      "productType": "W3015",
+      "length": 16.14173228,
+      "width": 30.3,
+      "height": 31.1023622,
+      "weight": 11.8,
+      "index": 0
+    },
+    {
+      "name": "SW-W3315",
+      "productType": "W3315",
+      "length": 16.14173228,
+      "width": 33.3,
+      "height": 33.85826772,
+      "weight": 12.1,
+      "index": 0
+    },
+    {
+      "name": "SW-W3615",
+      "productType": "W3615",
+      "length": 16.14173228,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 12.5,
+      "index": 0
+    },
+    {
+      "name": "SW-W3018",
+      "productType": "W3018",
+      "length": 18.8976378,
+      "width": 30.3,
+      "height": 31.1023622,
+      "weight": 12.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W3318",
+      "productType": "W3318",
+      "length": 18.8976378,
+      "width": 33.3,
+      "height": 33.85826772,
+      "weight": 13.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W3618",
+      "productType": "W3618",
+      "length": 18.8976378,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 14.3,
+      "index": 0
+    },
+    {
+      "name": "SW-W3024",
+      "productType": "W3024",
+      "length": 24.80314961,
+      "width": 30.3,
+      "height": 31.1023622,
+      "weight": 17.35,
+      "index": 0
+    },
+    {
+      "name": "SW-W3324",
+      "productType": "W3324",
+      "length": 24.80314961,
+      "width": 33.3,
+      "height": 33.85826772,
+      "weight": 18.25,
+      "index": 0
+    },
+    {
+      "name": "SW-W3624",
+      "productType": "W3624",
+      "length": 24.80314961,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 20.15,
+      "index": 0
+    },
+    {
+      "name": "SW-W361224",
+      "productType": "W361224",
+      "length": 24.40944882,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 17.1,
+      "index": 0
+    },
+    {
+      "name": "SW-W361524",
+      "productType": "W361524",
+      "length": 24.40944882,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 19.5,
+      "index": 0
+    },
+    {
+      "name": "SW-W361824",
+      "productType": "W361824",
+      "length": 24.40944882,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 21.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W362424",
+      "productType": "W362424",
+      "length": 24.80314961,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 30.0,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2430",
+      "productType": "DCW2430",
+      "length": 27.0,
+      "width": 27.0,
+      "height": 33.07086614,
+      "weight": 23.8,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2436",
+      "productType": "DCW2436",
+      "length": 27.0,
+      "width": 27.0,
+      "height": 36.81102362,
+      "weight": 27.0,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2442",
+      "productType": "DCW2442",
+      "length": 27.0,
+      "width": 27.0,
+      "height": 42.91338583,
+      "weight": 32.6,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2736",
+      "productType": "DCW2736",
+      "length": 30.0,
+      "width": 30.0,
+      "height": 36.81102362,
+      "weight": 37.75,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2742",
+      "productType": "DCW2742",
+      "length": 30.0,
+      "width": 30.0,
+      "height": 42.91338583,
+      "weight": 40.5,
+      "index": 0
+    },
+    {
+      "name": "SW-WBC2730",
+      "productType": "WBC2730",
+      "length": 30.0,
+      "width": 30.0,
+      "height": 31.1023622,
+      "weight": 18.45,
+      "index": 0
+    },
+    {
+      "name": "SW-WBC2736",
+      "productType": "WBC2736",
+      "length": 30.0,
+      "width": 30.0,
+      "height": 36.81102362,
+      "weight": 20.8,
+      "index": 0
+    },
+    {
+      "name": "SW-WBC2742",
+      "productType": "WBC2742",
+      "length": 30.0,
+      "width": 30.0,
+      "height": 42.91338583,
+      "weight": 25.25,
+      "index": 0
+    },
+    {
+      "name": "SW-OE630",
+      "productType": "OE630",
+      "length": 31.1023622,
+      "width": 13.0,
+      "height": 2.559055118,
+      "weight": 20.41,
+      "index": 0
+    },
+    {
+      "name": "SW-OE636",
+      "productType": "OE636",
+      "length": 36.81102362,
+      "width": 13.0,
+      "height": 2.559055118,
+      "weight": 20.41,
+      "index": 0
+    },
+    {
+      "name": "SW-OE642",
+      "productType": "OE642",
+      "length": 42.91338583,
+      "width": 13.0,
+      "height": 2.559055118,
+      "weight": 20.41,
+      "index": 0
+    },
+    {
+      "name": "SW-PR3015",
+      "productType": "PR3015",
+      "length": 31.1023622,
+      "width": 16.1,
+      "height": 4.724409449,
+      "weight": 20.41,
+      "index": 0
+    },
+    {
+      "name": "SW-WR3015",
+      "productType": "WR3015",
+      "length": 16.14173228,
+      "width": 16.1,
+      "height": 31.1023622,
+      "weight": 24.95,
+      "index": 0
+    },
+    {
+      "name": "SW-SGH30",
+      "productType": "SGH30",
+      "length": 31.1023622,
+      "width": 12.6,
+      "height": 1.968503937,
+      "weight": 4.54,
+      "index": 0
+    },
+    {
+      "name": "SW-W3012GD",
+      "productType": "W3012GD",
+      "length": 15.35433071,
+      "width": 11.4,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3312GD",
+      "productType": "W3312GD",
+      "length": 16.73228346,
+      "width": 11.4,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3612GD",
+      "productType": "W3612GD",
+      "length": 18.30708661,
+      "width": 11.4,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3018GD",
+      "productType": "W3018GD",
+      "length": 17.32283465,
+      "width": 15.4,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1530GD",
+      "productType": "W1530GD",
+      "length": 29.52755906,
+      "width": 15.2,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1830GD",
+      "productType": "W1830GD",
+      "length": 29.52755906,
+      "width": 18.1,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W2430GD",
+      "productType": "W2430GD",
+      "length": 29.52755906,
+      "width": 12.2,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3030GD",
+      "productType": "W3030GD",
+      "length": 29.52755906,
+      "width": 15.4,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1536GD",
+      "productType": "W1536GD",
+      "length": 35.43307087,
+      "width": 15.2,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1836GD",
+      "productType": "W1836GD",
+      "length": 35.43307087,
+      "width": 18.1,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W2436GD",
+      "productType": "W2436GD",
+      "length": 35.43307087,
+      "width": 12.2,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3036GD",
+      "productType": "W3036GD",
+      "length": 35.43307087,
+      "width": 15.4,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1542GD",
+      "productType": "W1542GD",
+      "length": 41.33858268,
+      "width": 15.2,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1842GD",
+      "productType": "W1842GD",
+      "length": 41.33858268,
+      "width": 18.1,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W2442GD",
+      "productType": "W2442GD",
+      "length": 41.33858268,
+      "width": 25.0,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3042GD",
+      "productType": "W3042GD",
+      "length": 41.33858268,
+      "width": 15.4,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2430GD",
+      "productType": "DCW2430GD",
+      "length": 31.25,
+      "width": 15.6,
+      "height": 5.0,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2436GD",
+      "productType": "DCW2436GD",
+      "length": 37.75,
+      "width": 15.6,
+      "height": 5.0,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2442GD",
+      "productType": "DCW2442GD",
+      "length": 37.75,
+      "width": 16.0,
+      "height": 5.0,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-U188424",
+      "productType": "U188424",
+      "length": 85.03937008,
+      "width": 18.3,
+      "height": 25.19685039,
+      "weight": 65.0,
+      "index": 100
+    },
+    {
+      "name": "SW-U248424",
+      "productType": "U248424",
+      "length": 85.5,
+      "width": 24.3,
+      "height": 26.0,
+      "weight": 73.4,
+      "index": 100
+    },
+    {
+      "name": "SW-U308424",
+      "productType": "U308424",
+      "length": 82.5,
+      "width": 30.3,
+      "height": 32.0,
+      "weight": 81.8,
+      "index": 100
+    },
+    {
+      "name": "SW-U189024",
+      "productType": "U189024",
+      "length": 90.94488189,
+      "width": 18.3,
+      "height": 25.19685039,
+      "weight": 63.4,
+      "index": 100
+    },
+    {
+      "name": "SW-U249024",
+      "productType": "U249024",
+      "length": 90.94488189,
+      "width": 24.3,
+      "height": 25.19685039,
+      "weight": 75.5,
+      "index": 100
+    },
+    {
+      "name": "SW-U309024",
+      "productType": "U309024",
+      "length": 90.94488189,
+      "width": 30.3,
+      "height": 31.49606299,
+      "weight": 89.0,
+      "index": 100
+    },
+    {
+      "name": "SW-U189624",
+      "productType": "U189624",
+      "length": 96.8503937,
+      "width": 18.3,
+      "height": 25.19685039,
+      "weight": 76.0,
+      "index": 100
+    },
+    {
+      "name": "SW-U249624",
+      "productType": "U249624",
+      "length": 96.8503937,
+      "width": 24.3,
+      "height": 25.19685039,
+      "weight": 83.85,
+      "index": 100
+    },
+    {
+      "name": "SW-U309624",
+      "productType": "U309624",
+      "length": 96.8503937,
+      "width": 30.3,
+      "height": 31.49606299,
+      "weight": 90.0,
+      "index": 100
+    },
+    {
+      "name": "SW-O338424",
+      "productType": "O338424",
+      "length": 85.03937008,
+      "width": 33.3,
+      "height": 35.03937008,
+      "weight": 83.0,
+      "index": 100
+    },
+    {
+      "name": "SW-O339024",
+      "productType": "O339024",
+      "length": 90.94488189,
+      "width": 33.3,
+      "height": 35.03937008,
+      "weight": 91.0,
+      "index": 100
+    },
+    {
+      "name": "SW-O339624",
+      "productType": "O339624",
+      "length": 96.8503937,
+      "width": 33.3,
+      "height": 35.03937008,
+      "weight": 107.9,
+      "index": 100
+    },
+    {
+      "name": "SW-VS24",
+      "productType": "VS24",
+      "length": 24.80314961,
+      "width": 24.3,
+      "height": 35.43307087,
+      "weight": 19.5,
+      "index": 0
+    },
+    {
+      "name": "SW-VS27",
+      "productType": "VS27",
+      "length": 27.95275591,
+      "width": 27.3,
+      "height": 35.43307087,
+      "weight": 21.0,
+      "index": 0
+    },
+    {
+      "name": "SW-VS30",
+      "productType": "VS30",
+      "length": 31.1023622,
+      "width": 30.3,
+      "height": 35.43307087,
+      "weight": 23.0,
+      "index": 0
+    },
+    {
+      "name": "SW-VS36",
+      "productType": "VS36",
+      "length": 31.1023622,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 25.66,
+      "index": 0
+    },
+    {
+      "name": "SW-VSD48",
+      "productType": "VSD48",
+      "length": 31.1023622,
+      "width": 48.3,
+      "height": 48.81889764,
+      "weight": 38.56,
+      "index": 0
+    },
+    {
+      "name": "SW-3VDB12",
+      "productType": "3VDB12",
+      "length": 23.62204724,
+      "width": 12.3,
+      "height": 35.43307087,
+      "weight": 24.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3VDB15",
+      "productType": "3VDB15",
+      "length": 23.62204724,
+      "width": 15.3,
+      "height": 35.43307087,
+      "weight": 29.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3VDB18",
+      "productType": "3VDB18",
+      "length": 23.62204724,
+      "width": 18.3,
+      "height": 35.43307087,
+      "weight": 34.0,
+      "index": 0
+    },
+    {
+      "name": "SW-WDEP30",
+      "productType": "WDEP30",
+      "length": 29.33070866,
+      "width": 12.6,
+      "height": 0.866141732,
+      "weight": 3.18,
+      "index": 0
+    },
+    {
+      "name": "SW-WDEP36",
+      "productType": "WDEP36",
+      "length": 35.43307087,
+      "width": 12.6,
+      "height": 0.866141732,
+      "weight": 2.27,
+      "index": 0
+    },
+    {
+      "name": "SW-WDEP42",
+      "productType": "WDEP42",
+      "length": 41.33858268,
+      "width": 12.6,
+      "height": 0.866141732,
+      "weight": 2.27,
+      "index": 0
+    },
+    {
+      "name": "SW-BDEP",
+      "productType": "BDEP",
+      "length": 34.4488189,
+      "width": 24.4,
+      "height": 0.866141732,
+      "weight": 9.07,
+      "index": 0
+    },
+    {
+      "name": "SW-BF3",
+      "productType": "BF3",
+      "length": 38.18897638,
+      "width": 3.1,
+      "height": 1.0,
+      "weight": 4.4,
+      "index": 0
+    },
+    {
+      "name": "SW-BF6",
+      "productType": "BF6",
+      "length": 38.18897638,
+      "width": 6.3,
+      "height": 1.0,
+      "weight": 8.65,
+      "index": 0
+    },
+    {
+      "name": "SW-WF330",
+      "productType": "WF330",
+      "length": 31.1023622,
+      "width": 0.3,
+      "height": 1.0,
+      "weight": 0.33,
+      "index": 0
+    },
+    {
+      "name": "SW-WF336",
+      "productType": "WF336",
+      "length": 36.81102362,
+      "width": 0.3,
+      "height": 1.0,
+      "weight": 0.39,
+      "index": 0
+    },
+    {
+      "name": "SW-WF342",
+      "productType": "WF342",
+      "length": 42.91338583,
+      "width": 0.3,
+      "height": 1.0,
+      "weight": 0.455,
+      "index": 0
+    },
+    {
+      "name": "SW-WF396",
+      "productType": "WF396",
+      "length": 96.8503937,
+      "width": 0.3,
+      "height": 1.0,
+      "weight": 1.348,
+      "index": 100
+    },
+    {
+      "name": "SW-WF642",
+      "productType": "WF642",
+      "length": 42.91338583,
+      "width": 0.6,
+      "height": 1.0,
+      "weight": 0.88,
+      "index": 0
+    },
+    {
+      "name": "SW-WF696",
+      "productType": "WF696",
+      "length": 96.8503937,
+      "width": 0.6,
+      "height": 1.0,
+      "weight": 2.17,
+      "index": 100
+    },
+    {
+      "name": "SW-CM2",
+      "productType": "CM2",
+      "length": 96.8503937,
+      "width": 3.0,
+      "height": 1.0,
+      "weight": 5.0,
+      "index": 100
+    },
+    {
+      "name": "SW-LRM8",
+      "productType": "LRM8",
+      "length": 96.8503937,
+      "width": 2.2,
+      "height": 1.0,
+      "weight": 1.36,
+      "index": 100
+    },
+    {
+      "name": "SW-OCM8",
+      "productType": "OCM8",
+      "length": 96.8503937,
+      "width": 1.2,
+      "height": 1.0,
+      "weight": 2.0,
+      "index": 100
+    },
+    {
+      "name": "SW-SM8",
+      "productType": "SM8",
+      "length": 96.8503937,
+      "width": 1.0,
+      "height": 1.0,
+      "weight": 10.6,
+      "index": 100
+    },
+    {
+      "name": "SW-TKC",
+      "productType": "TKC",
+      "length": 96.8503937,
+      "width": 4.3,
+      "height": 0.236220472,
+      "weight": 1.0,
+      "index": 100
+    },
+    {
+      "name": "SW-SD",
+      "productType": "SD",
+      "length": 15.7480315,
+      "width": 11.8,
+      "height": 1.0,
+      "weight": 2.4,
+      "index": 0
+    },
+    {
+      "name": "SW-DWR3",
+      "productType": "DWR3",
+      "length": 35.43307087,
+      "width": 27.2,
+      "height": 0.787401575,
+      "weight": 1.0,
+      "index": 0
+    },
+    {
+      "name": "SW-FPV4296",
+      "productType": "FPV4296",
+      "length": 96.8503937,
+      "width": 42.5,
+      "height": 0.196850394,
+      "weight": 10.0,
+      "index": 100
+    },
+    {
+      "name": "SW-REP1.596",
+      "productType": "REP1.596",
+      "length": 96.8503937,
+      "width": 29.9,
+      "height": 0.787401575,
+      "weight": 15.5,
+      "index": 100
+    },
+    {
+      "name": "SW-REP396",
+      "productType": "REP396",
+      "length": 96.8503937,
+      "width": 29.9,
+      "height": 0.787401575,
+      "weight": 15.5,
+      "index": 100
+    },
+    {
+      "name": "SW-RS18",
+      "productType": "RS18",
+      "length": 28.74015748,
+      "width": 13.8,
+      "height": 3.346456693,
+      "weight": 6.1,
+      "index": 0
+    },
+    {
+      "name": "SW-RS21",
+      "productType": "RS21",
+      "length": 28.74015748,
+      "width": 16.7,
+      "height": 3.346456693,
+      "weight": 6.4,
+      "index": 0
+    },
+    {
+      "name": "SW-RS24",
+      "productType": "RS24",
+      "length": 28.74015748,
+      "width": 19.7,
+      "height": 3.346456693,
+      "weight": 6.8,
+      "index": 0
+    },
+    {
+      "name": "SW-RS27",
+      "productType": "RS27",
+      "length": 28.74015748,
+      "width": 20.5,
+      "height": 3.346456693,
+      "weight": 7.4,
+      "index": 0
+    },
+    {
+      "name": "SW-RS30",
+      "productType": "RS30",
+      "length": 28.74015748,
+      "width": 20.5,
+      "height": 3.346456693,
+      "weight": 7.9,
+      "index": 0
+    },
+    {
+      "name": "SW-RS33",
+      "productType": "RS33",
+      "length": 28.74015748,
+      "width": 20.5,
+      "height": 3.346456693,
+      "weight": 8.5,
+      "index": 0
+    },
+    {
+      "name": "SW-RS36",
+      "productType": "RS36",
+      "length": 32.48031496,
+      "width": 20.5,
+      "height": 3.346456693,
+      "weight": 9.1,
+      "index": 0
+    },
+    {
+      "name": "SW-VSD36L",
+      "productType": "VSD36L",
+      "length": 31.1023622,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 9.526,
+      "index": 0
+    },
+    {
+      "name": "SW-VSD36R",
+      "productType": "VSD36R",
+      "length": 31.1023622,
+      "width": 36.3,
+      "height": 36.81102362,
+      "weight": 9.526,
+      "index": 0
+    },
+    {
+      "name": "SW-VSD42L",
+      "productType": "VSD42L",
+      "length": 31.1023622,
+      "width": 42.3,
+      "height": 42.91338583,
+      "weight": 9.526,
+      "index": 0
+    },
+    {
+      "name": "SW-VSD42R",
+      "productType": "VSD42R",
+      "length": 31.1023622,
+      "width": 42.3,
+      "height": 42.91338583,
+      "weight": 9.526,
+      "index": 0
+    },
+    {
+      "name": "SW-CM8",
+      "productType": "CM8",
+      "length": 96.8503937,
+      "width": 3.0,
+      "height": 1.0,
+      "weight": 2.0,
+      "index": 100
+    },
+    {
+      "name": "SW-3VDB24",
+      "productType": "3VDB24",
+      "length": 26.77165354,
+      "width": 24.3,
+      "height": 35.43307087,
+      "weight": 39.0,
+      "index": 0
+    },
+    {
+      "name": "SW-CM8 2-1/4",
+      "productType": "CM8 2",
+      "length": 96.8503937,
+      "width": 4.0,
+      "height": 1.0,
+      "weight": 2.0,
+      "index": 100
+    },
+    {
+      "name": "SW-CMC8",
+      "productType": "CMC8",
+      "length": 96.8503937,
+      "width": 4.0,
+      "height": 1.0,
+      "weight": 3.0,
+      "index": 100
+    },
+    {
+      "name": "SW-FPV34.596",
+      "productType": "FPV34.596",
+      "length": 96.8503937,
+      "width": 35.0,
+      "height": 0.196850394,
+      "weight": 12.7,
+      "index": 100
+    },
+    {
+      "name": "SW-KD36",
+      "productType": "KD36",
+      "length": 36.81102362,
+      "width": 22.4,
+      "height": 3.543307087,
+      "weight": 6.9,
+      "index": 0
+    },
+    {
+      "name": "SW-LG",
+      "productType": "LG",
+      "length": 35.03937008,
+      "width": 4.1,
+      "height": 4.133858268,
+      "weight": 6.9,
+      "index": 0
+    },
+    {
+      "name": "SW-O339627",
+      "productType": "O339627",
+      "length": 96.8503937,
+      "width": 33.3,
+      "height": 34.2519685,
+      "weight": 107.9,
+      "index": 100
+    },
+    {
+      "name": "SW-SGH36",
+      "productType": "SGH36",
+      "length": 36.81102362,
+      "width": 12.6,
+      "height": 1.968503937,
+      "weight": 8.16,
+      "index": 0
+    },
+    {
+      "name": "SW-TLR8-2",
+      "productType": "TLR8",
+      "length": 96.8503937,
+      "width": 2.0,
+      "height": 2.0,
+      "weight": 45.36,
+      "index": 100
+    },
+    {
+      "name": "SW-U249627",
+      "productType": "U249627",
+      "length": 96.8503937,
+      "width": 24.3,
+      "height": 27.55905512,
+      "weight": 83.85,
+      "index": 100
+    },
+    {
+      "name": "SW-U309627",
+      "productType": "U309627",
+      "length": 96.8503937,
+      "width": 30.3,
+      "height": 31.49606299,
+      "weight": 90.0,
+      "index": 100
+    },
+    {
+      "name": "SW-WMC2730",
+      "productType": "WMC2730",
+      "length": 85.03937008,
+      "width": 27.3,
+      "height": 31.1023622,
+      "weight": 20.45,
+      "index": 0
+    },
+    {
+      "name": "SW-WMC2736",
+      "productType": "WMC2736",
+      "length": 85.03937008,
+      "width": 27.3,
+      "height": 36.81102362,
+      "weight": 22.8,
+      "index": 0
+    },
+    {
+      "name": "SW-WMC2742",
+      "productType": "WMC2742",
+      "length": 85.03937008,
+      "width": 27.3,
+      "height": 42.91338583,
+      "weight": 27.25,
+      "index": 0
+    },
+    {
+      "name": "SW-WR3615",
+      "productType": "WR3615",
+      "length": 90.94488189,
+      "width": 16.1,
+      "height": 4.724409449,
+      "weight": 11.55,
+      "index": 0
+    },
+    {
+      "name": "SW-WR3618",
+      "productType": "WR3618",
+      "length": 90.94488189,
+      "width": 18.9,
+      "height": 4.724409449,
+      "weight": 10.89,
+      "index": 0
+    },
+    {
+      "name": "SW-SPB6",
+      "productType": "SPB6",
+      "length": 90.94488189,
+      "width": 25.6,
+      "height": 7.874015748,
+      "weight": 21.42,
+      "index": 0
+    },
+    {
+      "name": "SW-W1212",
+      "productType": "W1212",
+      "length": 96.8503937,
+      "width": 12.3,
+      "height": 12.99212598,
+      "weight": 4.5,
+      "index": 0
+    },
+    {
+      "name": "SW-W1512",
+      "productType": "W1512",
+      "length": 84.64566929,
+      "width": 15.3,
+      "height": 16.14173228,
+      "weight": 5.3,
+      "index": 0
+    },
+    {
+      "name": "SW-W1812",
+      "productType": "W1812",
+      "length": 90.5511811,
+      "width": 18.3,
+      "height": 18.8976378,
+      "weight": 6.3,
+      "index": 0
+    },
+    {
+      "name": "SW-W1212GD",
+      "productType": "W1212GD",
+      "length": 12.20472441,
+      "width": 11.2,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1512GD",
+      "productType": "W1512GD",
+      "length": 14.96062992,
+      "width": 11.2,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1812GD",
+      "productType": "W1812GD",
+      "length": 18.11023622,
+      "width": 11.2,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-U188427",
+      "productType": "U188427",
+      "length": 85.03937008,
+      "width": 18.3,
+      "height": 27.55905512,
+      "weight": 65.0,
+      "index": 100
+    },
+    {
+      "name": "SW-U248427",
+      "productType": "U248427",
+      "length": 85.03937008,
+      "width": 24.3,
+      "height": 27.55905512,
+      "weight": 73.4,
+      "index": 100
+    },
+    {
+      "name": "SW-U308427",
+      "productType": "U308427",
+      "length": 85.03937008,
+      "width": 30.3,
+      "height": 31.49606299,
+      "weight": 81.8,
+      "index": 100
+    },
+    {
+      "name": "SW-U189027",
+      "productType": "U189027",
+      "length": 90.94488189,
+      "width": 18.3,
+      "height": 27.55905512,
+      "weight": 63.4,
+      "index": 100
+    },
+    {
+      "name": "SW-U249027",
+      "productType": "U249027",
+      "length": 90.94488189,
+      "width": 24.3,
+      "height": 27.55905512,
+      "weight": 75.5,
+      "index": 100
+    },
+    {
+      "name": "SW-U309027",
+      "productType": "U309027",
+      "length": 90.94488189,
+      "width": 30.3,
+      "height": 31.49606299,
+      "weight": 89.0,
+      "index": 100
+    },
+    {
+      "name": "SW-U189627",
+      "productType": "U189627",
+      "length": 96.8503937,
+      "width": 18.3,
+      "height": 27.55905512,
+      "weight": 76.0,
+      "index": 100
+    },
+    {
+      "name": "SW-O338427",
+      "productType": "O338427",
+      "length": 84.64566929,
+      "width": 33.3,
+      "height": 34.2519685,
+      "weight": 83.0,
+      "index": 100
+    },
+    {
+      "name": "SW-O339027",
+      "productType": "O339027",
+      "length": 90.5511811,
+      "width": 33.3,
+      "height": 34.2519685,
+      "weight": 91.0,
+      "index": 100
+    },
+    {
+      "name": "SW-CMC10",
+      "productType": "CMC10",
+      "length": 96.8503937,
+      "width": 5.0,
+      "height": 1.0,
+      "weight": 4.0,
+      "index": 100
+    },
+    {
+      "name": "SW-CM10",
+      "productType": "CM10",
+      "length": 96.8503937,
+      "width": 5.0,
+      "height": 1.0,
+      "weight": 3.0,
+      "index": 100
+    },
+    {
+      "name": "SW-W2112",
+      "productType": "W2112",
+      "length": 23.0,
+      "width": 14.0,
+      "height": 5.0,
+      "weight": 16.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W2712",
+      "productType": "W2712",
+      "length": 29.0,
+      "width": 15.0,
+      "height": 5.0,
+      "weight": 18.0,
+      "index": 0
+    },
+    {
+      "name": "SW-QRM",
+      "productType": "QRM",
+      "length": 96.0,
+      "width": 1.0,
+      "height": 1.0,
+      "weight": 3.0,
+      "index": 100
+    }
+  ],
+  "rta": [
+    {
+      "name": "SW-TB09",
+      "productType": "TB09",
+      "length": 35.43307087,
+      "width": 24.40944882,
+      "height": 3.149606299,
+      "weight": 17.0,
+      "index": 0
+    },
+    {
+      "name": "SW-B12",
+      "productType": "B12",
+      "length": 35.43307087,
+      "width": 26.77165354,
+      "height": 3.937007874,
+      "weight": 21.3,
+      "index": 0
+    },
+    {
+      "name": "SW-B15",
+      "productType": "B15",
+      "length": 35.43307087,
+      "width": 24.40944882,
+      "height": 4.724409449,
+      "weight": 23.4,
+      "index": 0
+    },
+    {
+      "name": "SW-B18",
+      "productType": "B18",
+      "length": 35.43307087,
+      "width": 24.40944882,
+      "height": 4.724409449,
+      "weight": 25.1,
+      "index": 0
+    },
+    {
+      "name": "SW-B21",
+      "productType": "B21",
+      "length": 35.43307087,
+      "width": 24.40944882,
+      "height": 4.724409449,
+      "weight": 27.7,
+      "index": 0
+    },
+    {
+      "name": "SW-B24",
+      "productType": "B24",
+      "length": 35.43307087,
+      "width": 26.77165354,
+      "height": 5.118110236,
+      "weight": 29.0,
+      "index": 0
+    },
+    {
+      "name": "SW-B27",
+      "productType": "B27",
+      "length": 35.43307087,
+      "width": 28.34645669,
+      "height": 5.118110236,
+      "weight": 31.2,
+      "index": 0
+    },
+    {
+      "name": "SW-B30",
+      "productType": "B30",
+      "length": 35.43307087,
+      "width": 31.1023622,
+      "height": 5.118110236,
+      "weight": 33.85,
+      "index": 0
+    },
+    {
+      "name": "SW-B33",
+      "productType": "B33",
+      "length": 35.43307087,
+      "width": 31.1023622,
+      "height": 5.118110236,
+      "weight": 39.85,
+      "index": 0
+    },
+    {
+      "name": "SW-B36",
+      "productType": "B36",
+      "length": 36.81102362,
+      "width": 31.1023622,
+      "height": 5.118110236,
+      "weight": 42.5,
+      "index": 0
+    },
+    {
+      "name": "SW-B42",
+      "productType": "B42",
+      "length": 42.91338583,
+      "width": 31.1023622,
+      "height": 5.118110236,
+      "weight": 47.2,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB12",
+      "productType": "3DB12",
+      "length": 35.43307087,
+      "width": 24.40944882,
+      "height": 5.511811024,
+      "weight": 30.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB15",
+      "productType": "3DB15",
+      "length": 35.43307087,
+      "width": 26.77165354,
+      "height": 5.511811024,
+      "weight": 32.2,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB18",
+      "productType": "3DB18",
+      "length": 35.43307087,
+      "width": 26.77165354,
+      "height": 5.511811024,
+      "weight": 34.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB21",
+      "productType": "3DB21",
+      "length": 35.43307087,
+      "width": 26.77165354,
+      "height": 5.511811024,
+      "weight": 37.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB24",
+      "productType": "3DB24",
+      "length": 35.43307087,
+      "width": 26.77165354,
+      "height": 5.905511811,
+      "weight": 40.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB27",
+      "productType": "3DB27",
+      "length": 35.43307087,
+      "width": 28.34645669,
+      "height": 5.905511811,
+      "weight": 43.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB30",
+      "productType": "3DB30",
+      "length": 35.43307087,
+      "width": 31.1023622,
+      "height": 5.905511811,
+      "weight": 46.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB33",
+      "productType": "3DB33",
+      "length": 35.43307087,
+      "width": 31.1023622,
+      "height": 5.905511811,
+      "weight": 48.5,
+      "index": 0
+    },
+    {
+      "name": "SW-3DB36",
+      "productType": "3DB36",
+      "length": 36.81102362,
+      "width": 31.88976378,
+      "height": 5.905511811,
+      "weight": 51.5,
+      "index": 0
+    },
+    {
+      "name": "SW-MB30",
+      "productType": "MB30",
+      "length": 35.43307087,
+      "width": 31.1023622,
+      "height": 4.724409449,
+      "weight": 18.9,
+      "index": 0
+    },
+    {
+      "name": "SW-SB27",
+      "productType": "SB27",
+      "length": 35.43307087,
+      "width": 27.95275591,
+      "height": 4.330708661,
+      "weight": 25.5,
+      "index": 0
+    },
+    {
+      "name": "SW-SB30",
+      "productType": "SB30",
+      "length": 35.43307087,
+      "width": 31.1023622,
+      "height": 4.330708661,
+      "weight": 29.0,
+      "index": 0
+    },
+    {
+      "name": "SW-SB33",
+      "productType": "SB33",
+      "length": 35.43307087,
+      "width": 31.1023622,
+      "height": 4.330708661,
+      "weight": 30.0,
+      "index": 0
+    },
+    {
+      "name": "SW-SB36",
+      "productType": "SB36",
+      "length": 36.81102362,
+      "width": 31.1023622,
+      "height": 4.330708661,
+      "weight": 31.3,
+      "index": 0
+    },
+    {
+      "name": "SW-FSB36",
+      "productType": "FSB36",
+      "length": 36.81102362,
+      "width": 31.1023622,
+      "height": 4.330708661,
+      "weight": 30.3,
+      "index": 0
+    },
+    {
+      "name": "SW-CSB36",
+      "productType": "CSB36",
+      "length": 35.82677165,
+      "width": 35.82677165,
+      "height": 6.692913386,
+      "weight": 41.18,
+      "index": 0
+    },
+    {
+      "name": "SW-DCSF42",
+      "productType": "DCSF42",
+      "length": 42.51968504,
+      "width": 42.51968504,
+      "height": 2.362204724,
+      "weight": 8.62,
+      "index": 0
+    },
+    {
+      "name": "SW-SBF4242",
+      "productType": "SBF4242",
+      "length": 42.51968504,
+      "width": 42.51968504,
+      "height": 1.181102362,
+      "weight": 7.71,
+      "index": 0
+    },
+    {
+      "name": "SW-ERB33",
+      "productType": "ERB33",
+      "length": 35.43307087,
+      "width": 32.67716535,
+      "height": 5.118110236,
+      "weight": 46.1,
+      "index": 0
+    },
+    {
+      "name": "SW-ERB36",
+      "productType": "ERB36",
+      "length": 35.82677165,
+      "width": 32.67716535,
+      "height": 5.118110236,
+      "weight": 48.5,
+      "index": 0
+    },
+    {
+      "name": "SW-LST",
+      "productType": "LST",
+      "length": 28.5,
+      "width": 28.5,
+      "height": 5.5,
+      "weight": 2.5,
+      "index": 0
+    },
+    {
+      "name": "SW-SPB9",
+      "productType": "SPB9",
+      "length": 35.43307087,
+      "width": 25.59055118,
+      "height": 9.251968504,
+      "weight": 25.0,
+      "index": 0
+    },
+    {
+      "name": "SW-BWB18",
+      "productType": "BWB18",
+      "length": 35.43307087,
+      "width": 24.40944882,
+      "height": 5.31496063,
+      "weight": 34.02,
+      "index": 0
+    },
+    {
+      "name": "SW-BBC36",
+      "productType": "BBC36",
+      "length": 36.81102362,
+      "width": 31.1023622,
+      "height": 5.118110236,
+      "weight": 31.0,
+      "index": 0
+    },
+    {
+      "name": "SW-BBC39",
+      "productType": "BBC39",
+      "length": 39.76377953,
+      "width": 31.1023622,
+      "height": 5.118110236,
+      "weight": 35.3,
+      "index": 0
+    },
+    {
+      "name": "SW-BBC42",
+      "productType": "BBC42",
+      "length": 42.91338583,
+      "width": 31.1023622,
+      "height": 5.118110236,
+      "weight": 39.4,
+      "index": 0
+    },
+    {
+      "name": "SW-BES12",
+      "productType": "BES12",
+      "length": 31.1023622,
+      "width": 24.80314961,
+      "height": 3.149606299,
+      "weight": 11.33,
+      "index": 0
+    },
+    {
+      "name": "SW-W0930",
+      "productType": "W0930",
+      "length": 31.1023622,
+      "width": 12.00787402,
+      "height": 4.724409449,
+      "weight": 9.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W1230",
+      "productType": "W1230",
+      "length": 31.1023622,
+      "width": 12.99212598,
+      "height": 4.724409449,
+      "weight": 10.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W1530",
+      "productType": "W1530",
+      "length": 31.1023622,
+      "width": 16.14173228,
+      "height": 4.724409449,
+      "weight": 13.25,
+      "index": 0
+    },
+    {
+      "name": "SW-W1830",
+      "productType": "W1830",
+      "length": 31.1023622,
+      "width": 18.8976378,
+      "height": 4.724409449,
+      "weight": 14.85,
+      "index": 0
+    },
+    {
+      "name": "SW-W2130",
+      "productType": "W2130",
+      "length": 31.1023622,
+      "width": 22.04724409,
+      "height": 4.724409449,
+      "weight": 16.65,
+      "index": 0
+    },
+    {
+      "name": "SW-W2430",
+      "productType": "W2430",
+      "length": 31.1023622,
+      "width": 24.80314961,
+      "height": 4.330708661,
+      "weight": 19.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W2730",
+      "productType": "W2730",
+      "length": 31.1023622,
+      "width": 27.95275591,
+      "height": 4.330708661,
+      "weight": 20.45,
+      "index": 0
+    },
+    {
+      "name": "SW-W3030",
+      "productType": "W3030",
+      "length": 31.1023622,
+      "width": 31.1023622,
+      "height": 4.330708661,
+      "weight": 22.5,
+      "index": 0
+    },
+    {
+      "name": "SW-W3330",
+      "productType": "W3330",
+      "length": 33.66141732,
+      "width": 31.1023622,
+      "height": 4.330708661,
+      "weight": 24.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3630",
+      "productType": "W3630",
+      "length": 36.81102362,
+      "width": 31.1023622,
+      "height": 4.330708661,
+      "weight": 26.15,
+      "index": 0
+    },
+    {
+      "name": "SW-W0936",
+      "productType": "W0936",
+      "length": 36.81102362,
+      "width": 12.00787402,
+      "height": 4.724409449,
+      "weight": 11.45,
+      "index": 0
+    },
+    {
+      "name": "SW-W1236",
+      "productType": "W1236",
+      "length": 36.81102362,
+      "width": 12.99212598,
+      "height": 4.724409449,
+      "weight": 13.3,
+      "index": 0
+    },
+    {
+      "name": "SW-W1536",
+      "productType": "W1536",
+      "length": 36.81102362,
+      "width": 16.14173228,
+      "height": 4.724409449,
+      "weight": 14.15,
+      "index": 0
+    },
+    {
+      "name": "SW-W1836",
+      "productType": "W1836",
+      "length": 36.81102362,
+      "width": 18.8976378,
+      "height": 4.724409449,
+      "weight": 16.6,
+      "index": 0
+    },
+    {
+      "name": "SW-W2136",
+      "productType": "W2136",
+      "length": 36.81102362,
+      "width": 22.04724409,
+      "height": 4.724409449,
+      "weight": 19.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W2436",
+      "productType": "W2436",
+      "length": 36.81102362,
+      "width": 24.80314961,
+      "height": 4.330708661,
+      "weight": 21.6,
+      "index": 0
+    },
+    {
+      "name": "SW-W2736",
+      "productType": "W2736",
+      "length": 36.81102362,
+      "width": 27.95275591,
+      "height": 4.330708661,
+      "weight": 22.8,
+      "index": 0
+    },
+    {
+      "name": "SW-W3036",
+      "productType": "W3036",
+      "length": 36.81102362,
+      "width": 31.1023622,
+      "height": 4.330708661,
+      "weight": 25.2,
+      "index": 0
+    },
+    {
+      "name": "SW-W3336",
+      "productType": "W3336",
+      "length": 36.81102362,
+      "width": 33.85826772,
+      "height": 4.330708661,
+      "weight": 27.3,
+      "index": 0
+    },
+    {
+      "name": "SW-W3636",
+      "productType": "W3636",
+      "length": 36.81102362,
+      "width": 36.81102362,
+      "height": 4.330708661,
+      "weight": 29.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W0942",
+      "productType": "W0942",
+      "length": 42.91338583,
+      "width": 12.00787402,
+      "height": 4.724409449,
+      "weight": 13.2,
+      "index": 0
+    },
+    {
+      "name": "SW-W1242",
+      "productType": "W1242",
+      "length": 42.91338583,
+      "width": 12.99212598,
+      "height": 4.724409449,
+      "weight": 14.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W1542",
+      "productType": "W1542",
+      "length": 42.91338583,
+      "width": 16.14173228,
+      "height": 4.724409449,
+      "weight": 18.55,
+      "index": 0
+    },
+    {
+      "name": "SW-W1842",
+      "productType": "W1842",
+      "length": 42.91338583,
+      "width": 18.8976378,
+      "height": 4.724409449,
+      "weight": 19.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W2142",
+      "productType": "W2142",
+      "length": 42.91338583,
+      "width": 22.04724409,
+      "height": 4.724409449,
+      "weight": 21.45,
+      "index": 0
+    },
+    {
+      "name": "SW-W2442",
+      "productType": "W2442",
+      "length": 42.91338583,
+      "width": 24.80314961,
+      "height": 4.330708661,
+      "weight": 24.8,
+      "index": 0
+    },
+    {
+      "name": "SW-W2742",
+      "productType": "W2742",
+      "length": 42.91338583,
+      "width": 27.95275591,
+      "height": 4.330708661,
+      "weight": 27.25,
+      "index": 0
+    },
+    {
+      "name": "SW-W3042",
+      "productType": "W3042",
+      "length": 42.91338583,
+      "width": 31.1023622,
+      "height": 4.330708661,
+      "weight": 29.65,
+      "index": 0
+    },
+    {
+      "name": "SW-W3342",
+      "productType": "W3342",
+      "length": 42.91338583,
+      "width": 33.85826772,
+      "height": 4.330708661,
+      "weight": 30.75,
+      "index": 0
+    },
+    {
+      "name": "SW-W3642",
+      "productType": "W3642",
+      "length": 42.91338583,
+      "width": 36.81102362,
+      "height": 4.330708661,
+      "weight": 34.9,
+      "index": 0
+    },
+    {
+      "name": "SW-W3012",
+      "productType": "W3012",
+      "length": 31.1023622,
+      "width": 12.99212598,
+      "height": 3.937007874,
+      "weight": 10.2,
+      "index": 0
+    },
+    {
+      "name": "SW-W3312",
+      "productType": "W3312",
+      "length": 33.85826772,
+      "width": 12.99212598,
+      "height": 3.937007874,
+      "weight": 11.6,
+      "index": 0
+    },
+    {
+      "name": "SW-W3612",
+      "productType": "W3612",
+      "length": 36.81102362,
+      "width": 12.99212598,
+      "height": 3.937007874,
+      "weight": 11.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W3015",
+      "productType": "W3015",
+      "length": 31.1023622,
+      "width": 16.14173228,
+      "height": 3.937007874,
+      "weight": 11.8,
+      "index": 0
+    },
+    {
+      "name": "SW-W3315",
+      "productType": "W3315",
+      "length": 33.85826772,
+      "width": 16.14173228,
+      "height": 3.937007874,
+      "weight": 12.1,
+      "index": 0
+    },
+    {
+      "name": "SW-W3615",
+      "productType": "W3615",
+      "length": 36.81102362,
+      "width": 16.14173228,
+      "height": 3.937007874,
+      "weight": 12.5,
+      "index": 0
+    },
+    {
+      "name": "SW-W3018",
+      "productType": "W3018",
+      "length": 31.1023622,
+      "width": 18.8976378,
+      "height": 3.937007874,
+      "weight": 12.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W3318",
+      "productType": "W3318",
+      "length": 33.85826772,
+      "width": 18.8976378,
+      "height": 3.937007874,
+      "weight": 13.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W3618",
+      "productType": "W3618",
+      "length": 36.81102362,
+      "width": 18.8976378,
+      "height": 3.937007874,
+      "weight": 14.3,
+      "index": 0
+    },
+    {
+      "name": "SW-W3024",
+      "productType": "W3024",
+      "length": 31.1023622,
+      "width": 24.80314961,
+      "height": 4.330708661,
+      "weight": 17.35,
+      "index": 0
+    },
+    {
+      "name": "SW-W3324",
+      "productType": "W3324",
+      "length": 33.85826772,
+      "width": 24.80314961,
+      "height": 4.330708661,
+      "weight": 18.25,
+      "index": 0
+    },
+    {
+      "name": "SW-W3624",
+      "productType": "W3624",
+      "length": 36.81102362,
+      "width": 24.80314961,
+      "height": 4.330708661,
+      "weight": 20.15,
+      "index": 0
+    },
+    {
+      "name": "SW-W361224",
+      "productType": "W361224",
+      "length": 36.81102362,
+      "width": 24.40944882,
+      "height": 4.330708661,
+      "weight": 17.1,
+      "index": 0
+    },
+    {
+      "name": "SW-W361524",
+      "productType": "W361524",
+      "length": 36.81102362,
+      "width": 24.40944882,
+      "height": 4.330708661,
+      "weight": 19.5,
+      "index": 0
+    },
+    {
+      "name": "SW-W361824",
+      "productType": "W361824",
+      "length": 36.81102362,
+      "width": 24.40944882,
+      "height": 4.330708661,
+      "weight": 21.95,
+      "index": 0
+    },
+    {
+      "name": "SW-W362424",
+      "productType": "W362424",
+      "length": 36.81102362,
+      "width": 24.80314961,
+      "height": 4.921259843,
+      "weight": 30.0,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2430",
+      "productType": "DCW2430",
+      "length": 33.07086614,
+      "width": 18.50393701,
+      "height": 7.086614173,
+      "weight": 23.8,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2436",
+      "productType": "DCW2436",
+      "length": 36.81102362,
+      "width": 18.50393701,
+      "height": 7.086614173,
+      "weight": 27.0,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2442",
+      "productType": "DCW2442",
+      "length": 42.91338583,
+      "width": 18.50393701,
+      "height": 7.874015748,
+      "weight": 32.6,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2736",
+      "productType": "DCW2736",
+      "length": 36.81102362,
+      "width": 22.44094488,
+      "height": 7.086614173,
+      "weight": 37.75,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2742",
+      "productType": "DCW2742",
+      "length": 42.91338583,
+      "width": 22.44094488,
+      "height": 7.874015748,
+      "weight": 40.5,
+      "index": 0
+    },
+    {
+      "name": "SW-WBC2730",
+      "productType": "WBC2730",
+      "length": 31.1023622,
+      "width": 27.95275591,
+      "height": 4.330708661,
+      "weight": 18.45,
+      "index": 0
+    },
+    {
+      "name": "SW-WBC2736",
+      "productType": "WBC2736",
+      "length": 36.81102362,
+      "width": 27.95275591,
+      "height": 4.330708661,
+      "weight": 20.8,
+      "index": 0
+    },
+    {
+      "name": "SW-WBC2742",
+      "productType": "WBC2742",
+      "length": 42.91338583,
+      "width": 27.95275591,
+      "height": 4.330708661,
+      "weight": 25.25,
+      "index": 0
+    },
+    {
+      "name": "SW-OE630",
+      "productType": "OE630",
+      "length": 31.1023622,
+      "width": 12.99212598,
+      "height": 2.559055118,
+      "weight": 20.41,
+      "index": 0
+    },
+    {
+      "name": "SW-OE636",
+      "productType": "OE636",
+      "length": 36.81102362,
+      "width": 12.99212598,
+      "height": 2.559055118,
+      "weight": 20.41,
+      "index": 0
+    },
+    {
+      "name": "SW-OE642",
+      "productType": "OE642",
+      "length": 42.91338583,
+      "width": 12.99212598,
+      "height": 2.559055118,
+      "weight": 20.41,
+      "index": 0
+    },
+    {
+      "name": "SW-PR3015",
+      "productType": "PR3015",
+      "length": 31.1023622,
+      "width": 16.14173228,
+      "height": 4.724409449,
+      "weight": 20.41,
+      "index": 0
+    },
+    {
+      "name": "SW-WR3015",
+      "productType": "WR3015",
+      "length": 31.1023622,
+      "width": 16.14173228,
+      "height": 4.724409449,
+      "weight": 24.95,
+      "index": 0
+    },
+    {
+      "name": "SW-SGH30",
+      "productType": "SGH30",
+      "length": 31.1023622,
+      "width": 12.5984252,
+      "height": 1.968503937,
+      "weight": 4.54,
+      "index": 0
+    },
+    {
+      "name": "SW-W3012GD",
+      "productType": "W3012GD",
+      "length": 15.35433071,
+      "width": 11.41732283,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3312GD",
+      "productType": "W3312GD",
+      "length": 16.73228346,
+      "width": 11.41732283,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3612GD",
+      "productType": "W3612GD",
+      "length": 18.30708661,
+      "width": 11.41732283,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3018GD",
+      "productType": "W3018GD",
+      "length": 17.32283465,
+      "width": 15.35433071,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1530GD",
+      "productType": "W1530GD",
+      "length": 29.52755906,
+      "width": 15.15748031,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1830GD",
+      "productType": "W1830GD",
+      "length": 29.52755906,
+      "width": 18.11023622,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W2430GD",
+      "productType": "W2430GD",
+      "length": 29.52755906,
+      "width": 12.20472441,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3030GD",
+      "productType": "W3030GD",
+      "length": 29.52755906,
+      "width": 15.35433071,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1536GD",
+      "productType": "W1536GD",
+      "length": 35.43307087,
+      "width": 15.15748031,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1836GD",
+      "productType": "W1836GD",
+      "length": 35.43307087,
+      "width": 18.11023622,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W2436GD",
+      "productType": "W2436GD",
+      "length": 35.43307087,
+      "width": 12.20472441,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3036GD",
+      "productType": "W3036GD",
+      "length": 35.43307087,
+      "width": 15.35433071,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1542GD",
+      "productType": "W1542GD",
+      "length": 41.33858268,
+      "width": 15.15748031,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1842GD",
+      "productType": "W1842GD",
+      "length": 41.33858268,
+      "width": 18.11023622,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W2442GD",
+      "productType": "W2442GD",
+      "length": 41.33858268,
+      "width": 24.98425197,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W3042GD",
+      "productType": "W3042GD",
+      "length": 41.33858268,
+      "width": 15.35433071,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2430GD",
+      "productType": "DCW2430GD",
+      "length": 31.25,
+      "width": 15.6,
+      "height": 5.0,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2436GD",
+      "productType": "DCW2436GD",
+      "length": 37.75,
+      "width": 15.6,
+      "height": 5.0,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-DCW2442GD",
+      "productType": "DCW2442GD",
+      "length": 37.75,
+      "width": 16.0,
+      "height": 5.0,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-U188424",
+      "productType": "U188424",
+      "length": 85.03937008,
+      "width": 25.19685039,
+      "height": 4.724409449,
+      "weight": 65.0,
+      "index": 100
+    },
+    {
+      "name": "SW-U248424",
+      "productType": "U248424",
+      "length": 85.5,
+      "width": 26.0,
+      "height": 5.5,
+      "weight": 73.4,
+      "index": 100
+    },
+    {
+      "name": "SW-U308424",
+      "productType": "U308424",
+      "length": 82.5,
+      "width": 32.0,
+      "height": 5.5,
+      "weight": 81.8,
+      "index": 100
+    },
+    {
+      "name": "SW-U189024",
+      "productType": "U189024",
+      "length": 90.94488189,
+      "width": 25.19685039,
+      "height": 4.724409449,
+      "weight": 63.4,
+      "index": 100
+    },
+    {
+      "name": "SW-U249024",
+      "productType": "U249024",
+      "length": 90.94488189,
+      "width": 25.19685039,
+      "height": 5.31496063,
+      "weight": 75.5,
+      "index": 100
+    },
+    {
+      "name": "SW-U309024",
+      "productType": "U309024",
+      "length": 90.94488189,
+      "width": 31.49606299,
+      "height": 5.31496063,
+      "weight": 89.0,
+      "index": 100
+    },
+    {
+      "name": "SW-U189624",
+      "productType": "U189624",
+      "length": 96.8503937,
+      "width": 25.19685039,
+      "height": 4.724409449,
+      "weight": 76.0,
+      "index": 100
+    },
+    {
+      "name": "SW-U249624",
+      "productType": "U249624",
+      "length": 96.8503937,
+      "width": 25.19685039,
+      "height": 5.31496063,
+      "weight": 83.85,
+      "index": 100
+    },
+    {
+      "name": "SW-U309624",
+      "productType": "U309624",
+      "length": 96.8503937,
+      "width": 31.49606299,
+      "height": 5.31496063,
+      "weight": 90.0,
+      "index": 100
+    },
+    {
+      "name": "SW-O338424",
+      "productType": "O338424",
+      "length": 85.03937008,
+      "width": 35.03937008,
+      "height": 5.511811024,
+      "weight": 83.0,
+      "index": 100
+    },
+    {
+      "name": "SW-O339024",
+      "productType": "O339024",
+      "length": 90.94488189,
+      "width": 35.03937008,
+      "height": 5.511811024,
+      "weight": 91.0,
+      "index": 100
+    },
+    {
+      "name": "SW-O339624",
+      "productType": "O339624",
+      "length": 96.8503937,
+      "width": 35.03937008,
+      "height": 5.118110236,
+      "weight": 107.9,
+      "index": 100
+    },
+    {
+      "name": "SW-VS24",
+      "productType": "VS24",
+      "length": 35.43307087,
+      "width": 24.80314961,
+      "height": 4.330708661,
+      "weight": 19.5,
+      "index": 0
+    },
+    {
+      "name": "SW-VS27",
+      "productType": "VS27",
+      "length": 35.43307087,
+      "width": 27.95275591,
+      "height": 4.330708661,
+      "weight": 21.0,
+      "index": 0
+    },
+    {
+      "name": "SW-VS30",
+      "productType": "VS30",
+      "length": 35.43307087,
+      "width": 31.1023622,
+      "height": 4.330708661,
+      "weight": 23.0,
+      "index": 0
+    },
+    {
+      "name": "SW-VS36",
+      "productType": "VS36",
+      "length": 36.81102362,
+      "width": 31.1023622,
+      "height": 4.330708661,
+      "weight": 25.66,
+      "index": 0
+    },
+    {
+      "name": "SW-VSD48",
+      "productType": "VSD48",
+      "length": 48.81889764,
+      "width": 31.1023622,
+      "height": 5.31496063,
+      "weight": 38.56,
+      "index": 0
+    },
+    {
+      "name": "SW-3VDB12",
+      "productType": "3VDB12",
+      "length": 35.43307087,
+      "width": 23.62204724,
+      "height": 5.511811024,
+      "weight": 24.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3VDB15",
+      "productType": "3VDB15",
+      "length": 35.43307087,
+      "width": 23.62204724,
+      "height": 5.511811024,
+      "weight": 29.0,
+      "index": 0
+    },
+    {
+      "name": "SW-3VDB18",
+      "productType": "3VDB18",
+      "length": 35.43307087,
+      "width": 23.62204724,
+      "height": 5.511811024,
+      "weight": 34.0,
+      "index": 0
+    },
+    {
+      "name": "SW-WDEP30",
+      "productType": "WDEP30",
+      "length": 29.33070866,
+      "width": 12.5984252,
+      "height": 4.330708661,
+      "weight": 3.18,
+      "index": 0
+    },
+    {
+      "name": "SW-WDEP36",
+      "productType": "WDEP36",
+      "length": 35.43307087,
+      "width": 12.5984252,
+      "height": 4.330708661,
+      "weight": 2.27,
+      "index": 0
+    },
+    {
+      "name": "SW-WDEP42",
+      "productType": "WDEP42",
+      "length": 41.33858268,
+      "width": 12.5984252,
+      "height": 4.330708661,
+      "weight": 2.27,
+      "index": 0
+    },
+    {
+      "name": "SW-BDEP",
+      "productType": "BDEP",
+      "length": 34.4488189,
+      "width": 24.40944882,
+      "height": 4.330708661,
+      "weight": 9.07,
+      "index": 0
+    },
+    {
+      "name": "SW-BF3",
+      "productType": "BF3",
+      "length": 38.18897638,
+      "width": 10.62992126,
+      "height": 3.149606299,
+      "weight": 4.4,
+      "index": 0
+    },
+    {
+      "name": "SW-BF6",
+      "productType": "BF6",
+      "length": 38.18897638,
+      "width": 10.62992126,
+      "height": 6.299212598,
+      "weight": 8.65,
+      "index": 0
+    },
+    {
+      "name": "SW-WF330",
+      "productType": "WF330",
+      "length": 31.1023622,
+      "width": 0.8,
+      "height": 3.149606299,
+      "weight": 0.33,
+      "index": 0
+    },
+    {
+      "name": "SW-WF336",
+      "productType": "WF336",
+      "length": 36.81102362,
+      "width": 0.8,
+      "height": 3.149606299,
+      "weight": 0.39,
+      "index": 0
+    },
+    {
+      "name": "SW-WF342",
+      "productType": "WF342",
+      "length": 42.91338583,
+      "width": 0.8,
+      "height": 3.149606299,
+      "weight": 0.455,
+      "index": 0
+    },
+    {
+      "name": "SW-WF396",
+      "productType": "WF396",
+      "length": 96.8503937,
+      "width": 0.8,
+      "height": 3.149606299,
+      "weight": 1.348,
+      "index": 100
+    },
+    {
+      "name": "SW-WF642",
+      "productType": "WF642",
+      "length": 42.91338583,
+      "width": 0.8,
+      "height": 6.299212598,
+      "weight": 0.88,
+      "index": 0
+    },
+    {
+      "name": "SW-WF696",
+      "productType": "WF696",
+      "length": 96.8503937,
+      "width": 0.8,
+      "height": 6.299212598,
+      "weight": 2.17,
+      "index": 100
+    },
+    {
+      "name": "SW-CM2",
+      "productType": "CM2",
+      "length": 96.8503937,
+      "width": 7.086614173,
+      "height": 2.952755906,
+      "weight": 5.0,
+      "index": 100
+    },
+    {
+      "name": "SW-LRM8",
+      "productType": "LRM8",
+      "length": 96.8503937,
+      "width": 7.874015748,
+      "height": 2.165354331,
+      "weight": 1.36,
+      "index": 100
+    },
+    {
+      "name": "SW-OCM8",
+      "productType": "OCM8",
+      "length": 96.8503937,
+      "width": 4.921259843,
+      "height": 1.181102362,
+      "weight": 2.0,
+      "index": 100
+    },
+    {
+      "name": "SW-SM8",
+      "productType": "SM8",
+      "length": 96.8503937,
+      "width": 2.952755906,
+      "height": 1.771653543,
+      "weight": 10.6,
+      "index": 100
+    },
+    {
+      "name": "SW-TKC",
+      "productType": "TKC",
+      "length": 96.8503937,
+      "width": 4.724409449,
+      "height": 4.330708661,
+      "weight": 1.0,
+      "index": 100
+    },
+    {
+      "name": "SW-SD",
+      "productType": "SD",
+      "length": 15.7480315,
+      "width": 11.81102362,
+      "height": 4.330708661,
+      "weight": 2.4,
+      "index": 0
+    },
+    {
+      "name": "SW-DWR3",
+      "productType": "DWR3",
+      "length": 35.43307087,
+      "width": 27.16535433,
+      "height": 0.787401575,
+      "weight": 1.0,
+      "index": 0
+    },
+    {
+      "name": "SW-FPV4296",
+      "productType": "FPV4296",
+      "length": 96.8503937,
+      "width": 42.51968504,
+      "height": 0.196850394,
+      "weight": 10.0,
+      "index": 100
+    },
+    {
+      "name": "SW-REP1.596",
+      "productType": "REP1.596",
+      "length": 96.8503937,
+      "width": 29.9,
+      "height": 0.787401575,
+      "weight": 15.5,
+      "index": 100
+    },
+    {
+      "name": "SW-REP396",
+      "productType": "REP396",
+      "length": 96.8503937,
+      "width": 29.92125984,
+      "height": 0.787401575,
+      "weight": 15.5,
+      "index": 100
+    },
+    {
+      "name": "SW-RS18",
+      "productType": "RS18",
+      "length": 28.74015748,
+      "width": 13.77952756,
+      "height": 3.346456693,
+      "weight": 6.1,
+      "index": 0
+    },
+    {
+      "name": "SW-RS21",
+      "productType": "RS21",
+      "length": 28.74015748,
+      "width": 16.73228346,
+      "height": 3.346456693,
+      "weight": 6.4,
+      "index": 0
+    },
+    {
+      "name": "SW-RS24",
+      "productType": "RS24",
+      "length": 28.74015748,
+      "width": 19.68503937,
+      "height": 3.346456693,
+      "weight": 6.8,
+      "index": 0
+    },
+    {
+      "name": "SW-RS27",
+      "productType": "RS27",
+      "length": 28.74015748,
+      "width": 20.47244094,
+      "height": 3.346456693,
+      "weight": 7.4,
+      "index": 0
+    },
+    {
+      "name": "SW-RS30",
+      "productType": "RS30",
+      "length": 28.74015748,
+      "width": 20.47244094,
+      "height": 3.346456693,
+      "weight": 7.9,
+      "index": 0
+    },
+    {
+      "name": "SW-RS33",
+      "productType": "RS33",
+      "length": 28.74015748,
+      "width": 20.47244094,
+      "height": 3.346456693,
+      "weight": 8.5,
+      "index": 0
+    },
+    {
+      "name": "SW-RS36",
+      "productType": "RS36",
+      "length": 32.48031496,
+      "width": 20.47244094,
+      "height": 3.346456693,
+      "weight": 9.1,
+      "index": 0
+    },
+    {
+      "name": "SW-VSD36L",
+      "productType": "VSD36L",
+      "length": 36.81102362,
+      "width": 31.1023622,
+      "height": 5.31496063,
+      "weight": 9.526,
+      "index": 0
+    },
+    {
+      "name": "SW-VSD36R",
+      "productType": "VSD36R",
+      "length": 36.81102362,
+      "width": 31.1023622,
+      "height": 5.31496063,
+      "weight": 9.526,
+      "index": 0
+    },
+    {
+      "name": "SW-VSD42L",
+      "productType": "VSD42L",
+      "length": 42.91338583,
+      "width": 31.1023622,
+      "height": 5.31496063,
+      "weight": 9.526,
+      "index": 0
+    },
+    {
+      "name": "SW-VSD42R",
+      "productType": "VSD42R",
+      "length": 42.91338583,
+      "width": 31.1023622,
+      "height": 5.31496063,
+      "weight": 9.526,
+      "index": 0
+    },
+    {
+      "name": "SW-CM8",
+      "productType": "CM8",
+      "length": 96.8503937,
+      "width": 5.118110236,
+      "height": 1.181102362,
+      "weight": 2.0,
+      "index": 100
+    },
+    {
+      "name": "SW-3VDB24",
+      "productType": "3VDB24",
+      "length": 35.43307087,
+      "width": 26.77165354,
+      "height": 5.905511811,
+      "weight": 39.0,
+      "index": 0
+    },
+    {
+      "name": "SW-CM8 2-1/4",
+      "productType": "CM8 2",
+      "length": 96.8503937,
+      "width": 5.118110236,
+      "height": 1.181102362,
+      "weight": 2.0,
+      "index": 100
+    },
+    {
+      "name": "SW-CMC8",
+      "productType": "CMC8",
+      "length": 96.8503937,
+      "width": 4.330708661,
+      "height": 3.937007874,
+      "weight": 3.0,
+      "index": 100
+    },
+    {
+      "name": "SW-FPV34.596",
+      "productType": "FPV34.596",
+      "length": 96.8503937,
+      "width": 35.03937008,
+      "height": 0.196850394,
+      "weight": 12.7,
+      "index": 100
+    },
+    {
+      "name": "SW-KD36",
+      "productType": "KD36",
+      "length": 36.81102362,
+      "width": 22.44094488,
+      "height": 3.543307087,
+      "weight": 6.9,
+      "index": 0
+    },
+    {
+      "name": "SW-LG",
+      "productType": "LG",
+      "length": 35.03937008,
+      "width": 4.133858268,
+      "height": 4.133858268,
+      "weight": 6.9,
+      "index": 0
+    },
+    {
+      "name": "SW-O339627",
+      "productType": "O339627",
+      "length": 96.8503937,
+      "width": 34.2519685,
+      "height": 4.921259843,
+      "weight": 107.9,
+      "index": 100
+    },
+    {
+      "name": "SW-SGH36",
+      "productType": "SGH36",
+      "length": 36.81102362,
+      "width": 12.5984252,
+      "height": 1.968503937,
+      "weight": 8.16,
+      "index": 0
+    },
+    {
+      "name": "SW-TLR8-2",
+      "productType": "TLR8",
+      "length": 96.8503937,
+      "width": 4.724409449,
+      "height": 2.755905512,
+      "weight": 45.36,
+      "index": 100
+    },
+    {
+      "name": "SW-U249627",
+      "productType": "U249627",
+      "length": 96.8503937,
+      "width": 27.55905512,
+      "height": 5.31496063,
+      "weight": 83.85,
+      "index": 100
+    },
+    {
+      "name": "SW-U309627",
+      "productType": "U309627",
+      "length": 96.8503937,
+      "width": 31.49606299,
+      "height": 5.31496063,
+      "weight": 90.0,
+      "index": 100
+    },
+    {
+      "name": "SW-WMC2730",
+      "productType": "WMC2730",
+      "length": 31.1023622,
+      "width": 27.95275591,
+      "height": 4.527559055,
+      "weight": 20.45,
+      "index": 0
+    },
+    {
+      "name": "SW-WMC2736",
+      "productType": "WMC2736",
+      "length": 36.81102362,
+      "width": 27.95275591,
+      "height": 4.330708661,
+      "weight": 22.8,
+      "index": 0
+    },
+    {
+      "name": "SW-WMC2742",
+      "productType": "WMC2742",
+      "length": 42.91338583,
+      "width": 27.95275591,
+      "height": 4.330708661,
+      "weight": 27.25,
+      "index": 0
+    },
+    {
+      "name": "SW-WR3615",
+      "productType": "WR3615",
+      "length": 36.81102362,
+      "width": 16.14173228,
+      "height": 4.724409449,
+      "weight": 11.55,
+      "index": 0
+    },
+    {
+      "name": "SW-WR3618",
+      "productType": "WR3618",
+      "length": 36.81102362,
+      "width": 18.8976378,
+      "height": 4.724409449,
+      "weight": 10.89,
+      "index": 0
+    },
+    {
+      "name": "SW-SPB6",
+      "productType": "SPB6",
+      "length": 35.43307087,
+      "width": 25.59055118,
+      "height": 7.874015748,
+      "weight": 21.42,
+      "index": 0
+    },
+    {
+      "name": "SW-W1212",
+      "productType": "W1212",
+      "length": 12.99212598,
+      "width": 12.99212598,
+      "height": 3.543307087,
+      "weight": 4.5,
+      "index": 0
+    },
+    {
+      "name": "SW-W1512",
+      "productType": "W1512",
+      "length": 16.14173228,
+      "width": 12.99212598,
+      "height": 3.543307087,
+      "weight": 5.3,
+      "index": 0
+    },
+    {
+      "name": "SW-W1812",
+      "productType": "W1812",
+      "length": 18.8976378,
+      "width": 12.99212598,
+      "height": 3.543307087,
+      "weight": 6.3,
+      "index": 0
+    },
+    {
+      "name": "SW-W1212GD",
+      "productType": "W1212GD",
+      "length": 12.20472441,
+      "width": 11.22047244,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1512GD",
+      "productType": "W1512GD",
+      "length": 14.96062992,
+      "width": 11.22047244,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W1812GD",
+      "productType": "W1812GD",
+      "length": 18.11023622,
+      "width": 11.22047244,
+      "height": 1.968503937,
+      "weight": 3.0,
+      "index": 0
+    },
+    {
+      "name": "SW-U188427",
+      "productType": "U188427",
+      "length": 85.03937008,
+      "width": 27.55905512,
+      "height": 4.724409449,
+      "weight": 65.0,
+      "index": 100
+    },
+    {
+      "name": "SW-U248427",
+      "productType": "U248427",
+      "length": 85.03937008,
+      "width": 27.55905512,
+      "height": 5.31496063,
+      "weight": 73.4,
+      "index": 100
+    },
+    {
+      "name": "SW-U308427",
+      "productType": "U308427",
+      "length": 85.03937008,
+      "width": 31.49606299,
+      "height": 5.31496063,
+      "weight": 81.8,
+      "index": 100
+    },
+    {
+      "name": "SW-U189027",
+      "productType": "U189027",
+      "length": 90.94488189,
+      "width": 27.55905512,
+      "height": 4.724409449,
+      "weight": 63.4,
+      "index": 100
+    },
+    {
+      "name": "SW-U249027",
+      "productType": "U249027",
+      "length": 90.94488189,
+      "width": 27.55905512,
+      "height": 5.31496063,
+      "weight": 75.5,
+      "index": 100
+    },
+    {
+      "name": "SW-U309027",
+      "productType": "U309027",
+      "length": 90.94488189,
+      "width": 31.49606299,
+      "height": 5.31496063,
+      "weight": 89.0,
+      "index": 100
+    },
+    {
+      "name": "SW-U189627",
+      "productType": "U189627",
+      "length": 96.8503937,
+      "width": 27.55905512,
+      "height": 4.724409449,
+      "weight": 76.0,
+      "index": 100
+    },
+    {
+      "name": "SW-O338427",
+      "productType": "O338427",
+      "length": 84.64566929,
+      "width": 34.2519685,
+      "height": 4.921259843,
+      "weight": 83.0,
+      "index": 100
+    },
+    {
+      "name": "SW-O339027",
+      "productType": "O339027",
+      "length": 90.5511811,
+      "width": 34.2519685,
+      "height": 4.921259843,
+      "weight": 91.0,
+      "index": 100
+    },
+    {
+      "name": "SW-CMC10",
+      "productType": "CMC10",
+      "length": 96.8503937,
+      "width": 4.724409449,
+      "height": 4.724409449,
+      "weight": 4.0,
+      "index": 100
+    },
+    {
+      "name": "SW-CM10",
+      "productType": "CM10",
+      "length": 96.8503937,
+      "width": 4.724409449,
+      "height": 4.330708661,
+      "weight": 3.0,
+      "index": 100
+    },
+    {
+      "name": "SW-W2112",
+      "productType": "W2112",
+      "length": 23.0,
+      "width": 14.0,
+      "height": 5.0,
+      "weight": 16.0,
+      "index": 0
+    },
+    {
+      "name": "SW-W2712",
+      "productType": "W2712",
+      "length": 29.0,
+      "width": 15.0,
+      "height": 5.0,
+      "weight": 18.0,
+      "index": 0
+    },
+    {
+      "name": "SW-QRM",
+      "productType": "QRM",
+      "length": 96.0,
+      "width": 1.0,
+      "height": 1.0,
+      "weight": 3.0,
+      "index": 100
+    }
+  ]
+}
