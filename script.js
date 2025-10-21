@@ -3,8 +3,8 @@
 // ============================================
 
 const CONFIG = {
-    // API endpoint for Render.com backend
-    apiEndpoint: 'https://sunique-shipping-quote-automation.onrender.com/api/quote'
+    // API endpoint for Railway backend
+    apiEndpoint: 'https://sunique-freight-api-production.up.railway.app/api/quote'
 };
 
 // ============================================
