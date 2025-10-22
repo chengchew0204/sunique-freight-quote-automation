@@ -249,7 +249,7 @@ class ShippingQuoteApp {
         document.getElementById('resultBaseRate').textContent = 
             `$${data.selectedQuote.baseRate.toFixed(2)}`;
         document.getElementById('resultMarkupPercent').textContent = 
-            `${data.selectedQuote.markupPercentage}%`;
+            `${data.selectedQuote.markupPercentage.toFixed(0)}%`;
         document.getElementById('resultMarkup').textContent = 
             `$${data.selectedQuote.markup.toFixed(2)}`;
         document.getElementById('resultFinalQuote').textContent = 
