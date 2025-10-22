@@ -617,8 +617,7 @@ body {
 }
 
 .product-row > div:nth-child(4) {
-    text-align: right;
-    padding-right: 10px;
+    text-align: center;
 }
 
 .product-header {
@@ -636,8 +635,7 @@ body {
 }
 
 .product-header > div:nth-child(4) {
-    text-align: right;
-    padding-right: 30px;
+    text-align: center;
 }
 
 .product-name {
