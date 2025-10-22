@@ -202,8 +202,11 @@ class ShippingQuoteApp {
         // Populate order summary
         document.getElementById('resultOrderNumber').textContent = data.orderSummary.orderNumber;
         document.getElementById('resultTotalProducts').textContent = data.orderSummary.totalProducts;
+        
+        // Calculate total weight from pallets (includes pallet weight)
+        const totalPalletWeight = data.pallets.reduce((sum, pallet) => sum + pallet.weight, 0);
         document.getElementById('resultTotalWeight').textContent = 
-            `${Math.round(data.orderSummary.totalWeight).toLocaleString()} lbs`;
+            `${Math.round(totalPalletWeight).toLocaleString()} kg`;
         
         // Render pallets
         const palletsHtml = data.pallets.map((pallet, idx) => `
@@ -214,7 +217,7 @@ class ShippingQuoteApp {
                 </div>
                 <div class="pallet-info">
                     <div><strong>Dimensions:</strong> ${pallet.length}×${pallet.width}×${pallet.height}"</div>
-                    <div><strong>Weight:</strong> ${pallet.weight.toLocaleString()} lbs</div>
+                    <div><strong>Weight:</strong> ${pallet.weight.toLocaleString()} kg</div>
                     <div><strong>Type:</strong> ${pallet.palletType === 'Standard' ? '48×40' : '96×48'} pallet</div>
                 </div>
             </div>
@@ -227,14 +230,16 @@ class ShippingQuoteApp {
                 <div>Product Name</div>
                 <div>Quantity</div>
                 <div>Dimensions</div>
-                <div>Weight (lbs)</div>
+                <div>Weight (kg)</div>
+                <div>Weight (lb)</div>
             </div>
         ` + data.products.map(product => `
             <div class="product-row">
                 <div class="product-name">${product.name}</div>
                 <div>${product.quantity}</div>
                 <div>${product.length}×${product.width}×${product.height}"</div>
-                <div>${product.weight.toFixed(2)} lbs</div>
+                <div>${product.weight.toFixed(2)} kg</div>
+                <div>${(product.weight * 2.20462).toFixed(2)} lb</div>
             </div>
         `).join('');
         document.getElementById('productDetails').innerHTML = productsHtml;
