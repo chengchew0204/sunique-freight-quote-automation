@@ -227,14 +227,14 @@ class ShippingQuoteApp {
                 <div>Product Name</div>
                 <div>Quantity</div>
                 <div>Dimensions</div>
-                <div>Weight (kg)</div>
+                <div>Weight (lbs)</div>
             </div>
         ` + data.products.map(product => `
             <div class="product-row">
                 <div class="product-name">${product.name}</div>
                 <div>${product.quantity}</div>
                 <div>${product.length}×${product.width}×${product.height}"</div>
-                <div>${product.weight.toFixed(2)} kg</div>
+                <div>${product.weight.toFixed(2)} lbs</div>
             </div>
         `).join('');
         document.getElementById('productDetails').innerHTML = productsHtml;
