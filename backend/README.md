@@ -26,3 +26,4 @@ See `/doc/DEPLOYMENT_GUIDE.md` for full instructions.
 - `GET /health` - Health check
 - `POST /api/quote` - Get freight quote
 
+# Last updated: Wed Oct 22 10:40:09 CDT 2025
