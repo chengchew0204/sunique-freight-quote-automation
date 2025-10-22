@@ -609,8 +609,7 @@ body {
 }
 
 .product-row > div:nth-child(2) {
-    text-align: right;
-    padding-right: 10px;
+    text-align: center;
 }
 
 .product-row > div:nth-child(4) {
@@ -624,10 +623,13 @@ body {
     font-weight: 600;
 }
 
-.product-header > div:nth-child(2),
+.product-header > div:nth-child(2) {
+    text-align: center;
+}
+
 .product-header > div:nth-child(4) {
     text-align: right;
-    padding-right: 10px;
+    padding-right: 30px;
 }
 
 .product-name {
