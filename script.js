@@ -129,7 +129,7 @@ class ShippingQuoteApp {
     
     validateAndGetFormData() {
         const orderNumber = document.getElementById('orderNumber').value.trim();
-        const needsAssembly = document.getElementById('needsAssembly').value;
+        const needsAssembly = document.getElementById('needsAssembly').checked ? 'yes' : 'no';
         const pickupZip = document.getElementById('pickupZip').value.trim();
         const destinationZip = document.getElementById('destinationZip').value.trim();
         const deliveryType = document.querySelector('input[name="deliveryType"]:checked').value;
@@ -266,7 +266,6 @@ class ShippingQuoteApp {
                         </div>
                         <div class="quote-item-details">
                             <span><strong>Service:</strong> ${quote.service}</span>
-                            <span><strong>Distance:</strong> ${quote.distance} miles</span>
                             ${idx === 0 ? '<span style="color: #059669;">💰 Cheapest</span>' : ''}
                         </div>
                     </div>

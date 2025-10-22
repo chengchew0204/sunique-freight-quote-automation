@@ -34,14 +34,6 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="needsAssembly">Assembly Required</label>
-                            <select id="needsAssembly" required>
-                                <option value="no">No (RTA - Ready to Assemble)</option>
-                                <option value="yes">Yes (Assembled)</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
                             <label for="pickupZip">Pickup ZIP Code</label>
                             <input type="text" id="pickupZip" pattern="[0-9]{5}" placeholder="12345" maxlength="5" required>
                         </div>
@@ -49,6 +41,14 @@
                         <div class="form-group">
                             <label for="destinationZip">Destination ZIP Code</label>
                             <input type="text" id="destinationZip" pattern="[0-9]{5}" placeholder="67890" maxlength="5" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="needsAssembly">Assembly</label>
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" id="needsAssembly">
+                                <label for="needsAssembly" class="checkbox-label">Required</label>
+                            </div>
                         </div>
                         
                         <div class="form-group">
