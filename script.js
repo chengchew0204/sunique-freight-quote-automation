@@ -224,25 +224,28 @@ class ShippingQuoteApp {
         `).join('');
         document.getElementById('palletResults').innerHTML = palletsHtml;
         
-        // Render product details
-        const productsHtml = `
-            <div class="product-row product-header">
-                <div>Product Name</div>
-                <div>Quantity</div>
-                <div>Dimensions</div>
-                <div>Weight (kg)</div>
-                <div>Weight (lb)</div>
-            </div>
-        ` + data.products.map(product => `
-            <div class="product-row">
-                <div class="product-name">${product.name}</div>
-                <div>${product.quantity}</div>
-                <div>${product.length}×${product.width}×${product.height}"</div>
-                <div>${product.weight.toFixed(2)} kg</div>
-                <div>${(product.weight * 2.20462).toFixed(2)} lb</div>
-            </div>
-        `).join('');
-        document.getElementById('productDetails').innerHTML = productsHtml;
+        // Render product details (only if element exists)
+        const productDetailsElement = document.getElementById('productDetails');
+        if (productDetailsElement) {
+            const productsHtml = `
+                <div class="product-row product-header">
+                    <div>Product Name</div>
+                    <div>Quantity</div>
+                    <div>Dimensions</div>
+                    <div>Weight (kg)</div>
+                    <div>Weight (lb)</div>
+                </div>
+            ` + data.products.map(product => `
+                <div class="product-row">
+                    <div class="product-name">${product.name}</div>
+                    <div>${product.quantity}</div>
+                    <div>${product.length}×${product.width}×${product.height}"</div>
+                    <div>${product.weight.toFixed(2)} kg</div>
+                    <div>${(product.weight * 2.20462).toFixed(2)} lb</div>
+                </div>
+            `).join('');
+            productDetailsElement.innerHTML = productsHtml;
+        }
         
         // Render selected quote
         document.getElementById('resultCarrier').textContent = data.selectedQuote.carrier;
