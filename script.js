@@ -41,7 +41,7 @@ class ShippingQuoteApp {
             { id: 'dimensions', label: 'Calculating Dimensions', progress: 50 },
             { id: 'pallets', label: 'Optimizing Pallets', progress: 66 },
             { id: 'freight', label: 'Calculating Freight', progress: 83 },
-            { id: 'quotes', label: 'Getting Quotes', progress: 100 }
+            { id: 'quotes', label: 'Getting Quotes', progress: 99 }
         ];
     }
     
