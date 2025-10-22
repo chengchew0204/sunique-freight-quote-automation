@@ -97,6 +97,8 @@ class ShippingQuoteApp {
             // Step 1: Validate input
             this.updateProgress(0, 'Validating input data...');
             const formData = this.validateAndGetFormData();
+            // Store form data for display in results
+            this.currentFormData = formData;
             await this.sleep(500);
             
             // Step 2-6: Call Netlify serverless function (all backend processing)
@@ -207,6 +209,21 @@ class ShippingQuoteApp {
         const totalPalletWeight = data.pallets.reduce((sum, pallet) => sum + pallet.weight, 0);
         document.getElementById('resultTotalWeight').textContent = 
             `${Math.round(totalPalletWeight).toLocaleString()} lbs`;
+        
+        // Populate quote details from stored form data
+        if (this.currentFormData) {
+            document.getElementById('resultPickupZip').textContent = this.currentFormData.pickupZip;
+            document.getElementById('resultDestinationZip').textContent = this.currentFormData.destinationZip;
+            document.getElementById('resultDeliveryType').textContent = this.currentFormData.deliveryType;
+            document.getElementById('resultAssembly').textContent = this.currentFormData.needsAssembly === 'yes' ? 'Required' : 'Not Required';
+            document.getElementById('resultLiftgate').textContent = this.currentFormData.liftgateService === 'yes' ? 'Required' : 'Not Required';
+            
+            // Format pickup date for display (from ISO format to readable format)
+            const dateStr = this.currentFormData.pickupDate.split('T')[0];
+            const date = new Date(dateStr + 'T00:00:00');
+            const formattedDate = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+            document.getElementById('resultPickupDate').textContent = formattedDate;
+        }
         
         // Render pallets
         const palletsHtml = data.pallets.map((pallet, idx) => `
