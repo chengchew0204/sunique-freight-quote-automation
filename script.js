@@ -206,7 +206,7 @@ class ShippingQuoteApp {
         // Calculate total weight from pallets (includes pallet weight)
         const totalPalletWeight = data.pallets.reduce((sum, pallet) => sum + pallet.weight, 0);
         document.getElementById('resultTotalWeight').textContent = 
-            `${Math.round(totalPalletWeight).toLocaleString()} kg`;
+            `${Math.round(totalPalletWeight).toLocaleString()} lbs`;
         
         // Render pallets
         const palletsHtml = data.pallets.map((pallet, idx) => `
@@ -217,7 +217,7 @@ class ShippingQuoteApp {
                 </div>
                 <div class="pallet-info">
                     <div><strong>Dimensions:</strong> ${pallet.length}×${pallet.width}×${pallet.height}"</div>
-                    <div><strong>Weight:</strong> ${pallet.weight.toLocaleString()} kg</div>
+                    <div><strong>Weight:</strong> ${pallet.weight.toLocaleString()} lbs</div>
                     <div><strong>Type:</strong> ${pallet.palletType === 'Standard' ? '48×40' : '96×48'} pallet</div>
                 </div>
             </div>
