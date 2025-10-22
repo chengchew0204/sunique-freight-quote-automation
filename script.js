@@ -203,7 +203,7 @@ class ShippingQuoteApp {
         document.getElementById('resultOrderNumber').textContent = data.orderSummary.orderNumber;
         document.getElementById('resultTotalProducts').textContent = data.orderSummary.totalProducts;
         document.getElementById('resultTotalWeight').textContent = 
-            `${Math.round(data.orderSummary.totalWeight * 2.20462).toLocaleString()} lbs`;
+            `${Math.round(data.orderSummary.totalWeight).toLocaleString()} lbs`;
         
         // Render pallets
         const palletsHtml = data.pallets.map((pallet, idx) => `

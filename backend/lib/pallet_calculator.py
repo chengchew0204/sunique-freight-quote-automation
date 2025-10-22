@@ -146,12 +146,15 @@ def calculate_pallets(selected_sales_order, order_situation):
 
     # Redistribute weight based on actual pallet volume (lines 711-720)
     for pallet in pallets:
+        # Determine base area based on pallet type
+        base_area = LONG_PALLET_BASE_AREA if pallet['Type'] == 'Long' else STANDARD_PALLET_BASE_AREA
+        
         if pallet['Height'] < 96:
             # Use exact height for weight calculation
-            pallet_volume = pallet['Height'] * STANDARD_PALLET_BASE_AREA
+            pallet_volume = pallet['Height'] * base_area
         else:
             # Cap the height at 96 for weight calculation if it's greater than 96
-            pallet_volume = 96 * STANDARD_PALLET_BASE_AREA
+            pallet_volume = 96 * base_area
 
         # Calculate weight based on actual pallet volume
         pallet['Weight'] = (pallet_volume / total_volume) * total_weight
@@ -203,7 +206,8 @@ def adjust_low_height_pallets(pallets, total_volume, total_weight):
 
     # Final weight redistribution (lines 758-760)
     for pallet in pallets:
-        pallet_volume = pallet['Height'] * (LONG_PALLET_BASE_AREA if pallet['Type'] == 'Long' else STANDARD_PALLET_BASE_AREA)
+        base_area = LONG_PALLET_BASE_AREA if pallet['Type'] == 'Long' else STANDARD_PALLET_BASE_AREA
+        pallet_volume = pallet['Height'] * base_area
         pallet['Weight'] = (pallet_volume / total_volume) * total_weight
 
     return pallets
