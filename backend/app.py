@@ -1,6 +1,6 @@
 """
 Flask API for Sunique Freight Quote System
-Backend service for Render.com deployment
+Backend service for Railway.com deployment
 """
 
 from flask import Flask, request, jsonify
