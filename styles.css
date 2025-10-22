@@ -593,7 +593,7 @@ body {
 
 .product-row {
     display: grid;
-    grid-template-columns: 2fr 0.8fr 2.5fr 1fr;
+    grid-template-columns: 1.1fr 0.8fr 2.5fr 1fr;
     gap: 15px;
     padding: 12px 15px;
     align-items: center;
@@ -612,6 +612,10 @@ body {
     text-align: center;
 }
 
+.product-row > div:nth-child(3) {
+    text-align: center;
+}
+
 .product-row > div:nth-child(4) {
     text-align: right;
     padding-right: 10px;
@@ -624,6 +628,10 @@ body {
 }
 
 .product-header > div:nth-child(2) {
+    text-align: center;
+}
+
+.product-header > div:nth-child(3) {
     text-align: center;
 }
 
