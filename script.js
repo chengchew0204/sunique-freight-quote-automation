@@ -201,7 +201,7 @@ class ShippingQuoteApp {
         
         // Populate order summary
         document.getElementById('resultOrderNumber').textContent = data.orderSummary.orderNumber;
-        document.getElementById('resultTotalProducts').textContent = data.orderSummary.totalProducts;
+        document.getElementById('resultTotalPallets').textContent = data.pallets.length;
         
         // Calculate total weight from pallets (includes pallet weight)
         const totalPalletWeight = data.pallets.reduce((sum, pallet) => sum + pallet.weight, 0);
