@@ -1,6 +1,7 @@
 """
 Flask API for Sunique Freight Quote System
 Backend service for Railway.com deployment
+Version: 1.1.0 - Updated CORS configuration and location-based inventory support
 """
 
 from flask import Flask, request, jsonify
