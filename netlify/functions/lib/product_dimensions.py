@@ -44,9 +44,9 @@ class ProductDimensionsLoader:
             'weight(kg)': 'weight(kg)'
         })
         
-        # Extract product type (content after "-")
-        self.assembled_dimensions['ProductType'] = self.assembled_dimensions['name'].str.split('-').str[1]
-        self.rta_dimensions['ProductType'] = self.rta_dimensions['name'].str.split('-').str[1]
+        # Extract product type (content after "-") and ensure consistent string type
+        self.assembled_dimensions['ProductType'] = self.assembled_dimensions['name'].str.split('-').str[1].astype(str)
+        self.rta_dimensions['ProductType'] = self.rta_dimensions['name'].str.split('-').str[1].astype(str)
     
     def get_dimensions_table(self, needs_assembly):
         """
@@ -79,8 +79,8 @@ class ProductDimensionsLoader:
         # Choose the correct dimensions table
         dimensions_table = self.get_dimensions_table(needs_assembly)
         
-        # Extract product type (content after "-")
-        products_df['ProductType'] = products_df['name'].str.split('-').str[1]
+        # Extract product type (content after "-") and ensure consistent string type
+        products_df['ProductType'] = products_df['name'].str.split('-').str[1].astype(str)
         
         # Merge dimensions based on product type
         merged_df = pd.merge(
