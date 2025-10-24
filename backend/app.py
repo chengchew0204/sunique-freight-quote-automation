@@ -1,7 +1,6 @@
 """
 Flask API for Sunique Freight Quote System
 Backend service for Railway.com deployment
-Version: 1.1.0 - Updated CORS configuration and location-based inventory support
 """
 
 from flask import Flask, request, jsonify
@@ -25,18 +24,7 @@ from lib.quote_service import select_optimal_quote
 
 # Initialize Flask app
 app = Flask(__name__)
-
-# Enable CORS with explicit configuration
-CORS(app, resources={
-    r"/*": {
-        "origins": "*",
-        "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type", "Authorization"],
-        "expose_headers": ["Content-Type"],
-        "supports_credentials": False,
-        "max_age": 3600
-    }
-})
+CORS(app)  # Enable CORS for all routes
 
 @app.route('/health', methods=['GET'])
 def health_check():
@@ -50,7 +38,7 @@ def get_quote():
     
     Expected POST body:
     {
-        "orderNumber": "SO-009537" or "Quote-001277",
+        "orderNumber": "SO-009537",
         "needsAssembly": "yes" or "no",
         "pickupZip": "12345",
         "destinationZip": "67890",
@@ -58,16 +46,11 @@ def get_quote():
         "liftgateService": "yes" or "no",
         "pickupDate": "2024-01-15T08:00:00"
     }
-    
-    Note: orderNumber can accept both Sales Orders (SO-XXXXX) and Quotes (Quote-XXXXX)
     """
     
     # Handle OPTIONS request (CORS preflight)
     if request.method == 'OPTIONS':
-        print("Handling OPTIONS preflight request")
         return '', 200
-    
-    print(f"Received POST request to /api/quote")
     
     try:
         # Parse request body
@@ -84,7 +67,7 @@ def get_quote():
         
         # Validate inputs
         if not order_number:
-            return jsonify({'error': 'Order or quote number is required'}), 400
+            return jsonify({'error': 'Order number is required'}), 400
         if len(pickup_zip) != 5 or not pickup_zip.isdigit():
             return jsonify({'error': 'Invalid pickup ZIP code'}), 400
         if len(destination_zip) != 5 or not destination_zip.isdigit():
@@ -111,16 +94,11 @@ def get_quote():
         dimensions_path = str(current_dir / 'data' / 'Product Dimension.xlsx')
         dimensions_loader = ProductDimensionsLoader(dimensions_path)
         
-        # Step 1: Fetch order or quote from inFlow
-        print(f"Searching for order/quote: {order_number}")
-        order_df = inflow_api.search_order_or_quote(order_number)
+        # Step 1: Fetch order from inFlow
+        order_df = inflow_api.search_todays_orders(order_number)
         
         if order_df.empty:
-            error_msg = f'"{order_number}" not found in inFlow. Please check the number and try again.'
-            print(f"ERROR: {error_msg}")
-            return jsonify({'error': error_msg}), 404
-        
-        print(f"Successfully found order/quote: {order_number}")
+            return jsonify({'error': f'Order "{order_number}" not found in inFlow'}), 404
         
         # Step 2: Process products
         products_df = inflow_api.process_order_products(order_df)
