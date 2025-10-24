@@ -139,7 +139,7 @@ class ShippingQuoteApp {
         const pickupDateInput = document.getElementById('pickupDate').value;
         
         // Validations
-        if (!orderNumber) throw new Error('Order number cannot be empty');
+        if (!orderNumber) throw new Error('Order/Quote number cannot be empty');
         if (!/^\d{5}$/.test(pickupZip)) throw new Error('Invalid pickup ZIP code. Must be 5 digits.');
         if (!/^\d{5}$/.test(destinationZip)) throw new Error('Invalid destination ZIP code. Must be 5 digits.');
         if (!pickupDateInput) throw new Error('Pickup date is required');

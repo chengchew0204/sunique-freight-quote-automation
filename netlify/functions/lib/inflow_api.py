@@ -80,28 +80,85 @@ class InflowAPI:
     
     def search_todays_orders(self, order_number):
         """
-        Search for an order in today's orders
-        Ported from development/main.py lines 437-464
-        """
-        current_date = pd.Timestamp.today().strftime("%Y-%m-%d")
+        Search for an order or quote by order number
+        Supports both sales orders (SO-XXXXX) and quotes (Quote-XXXXX)
+        Uses inFlow API filter to search efficiently
         
+        Note: inFlow uses the same /sales-orders endpoint for both orders and quotes,
+        differentiated by the isQuote field (true for quotes, false for sales orders)
+        """
+        # Try using orderNumber filter directly (most efficient)
         url = (
             f"{self.base_url}/sales-orders"
             f"?count=100&include=lines,customer"
-            f"&filter[orderDate]={{\"fromDate\":\"{current_date}\", \"toDate\":\"{current_date}\"}}"
+            f"&filter[orderNumber]={order_number}"
         )
         
-        response = self.fetch_with_retries(url, timeout=60, max_attempts=5)
-        
-        if response.status_code == 200:
-            orders = response.json()
-            if isinstance(orders, list):
-                # Find the order with matching order number
-                for order in orders:
-                    if order.get('orderNumber') == order_number:
-                        return pd.json_normalize([order])
+        try:
+            print(f"Searching for order/quote: {order_number}")
+            response = self.fetch_with_retries(url, timeout=60, max_attempts=5)
             
-        return pd.DataFrame()  # Return empty DataFrame if not found
+            if response.status_code == 200:
+                orders = response.json()
+                print(f"Response type: {type(orders)}, length: {len(orders) if isinstance(orders, list) else 'N/A'}")
+                
+                # Handle both single object and array responses
+                if isinstance(orders, dict):
+                    # Single order returned
+                    if orders.get('orderNumber', '').upper() == order_number.upper():
+                        is_quote = orders.get('isQuote', False)
+                        doc_type = 'quote' if is_quote else 'sales order'
+                        print(f"Found {doc_type} {order_number} (single result)")
+                        return pd.json_normalize([orders])
+                elif isinstance(orders, list):
+                    # Array of orders
+                    if len(orders) > 0:
+                        # Filter might return exact match or similar matches
+                        for order in orders:
+                            if order.get('orderNumber', '').upper() == order_number.upper():
+                                is_quote = order.get('isQuote', False)
+                                doc_type = 'quote' if is_quote else 'sales order'
+                                print(f"Found {doc_type} {order_number} in results")
+                                return pd.json_normalize([order])
+            else:
+                print(f"Filter search failed, status={response.status_code}")
+        except Exception as e:
+            print(f"Error with filtered search: {e}")
+        
+        # Fallback: Search through recent orders if filter doesn't work
+        print(f"Filter search didn't find order/quote, trying pagination...")
+        for skip in range(0, 1000, 100):
+            url = (
+                f"{self.base_url}/sales-orders"
+                f"?count=100&include=lines,customer&skip={skip}"
+            )
+            
+            try:
+                response = self.fetch_with_retries(url, timeout=60, max_attempts=5)
+                
+                if response.status_code == 200:
+                    orders = response.json()
+                    if isinstance(orders, list):
+                        if len(orders) == 0:
+                            print(f"No more orders at skip={skip}")
+                            break
+                        
+                        for order in orders:
+                            if order.get('orderNumber', '').upper() == order_number.upper():
+                                is_quote = order.get('isQuote', False)
+                                doc_type = 'quote' if is_quote else 'sales order'
+                                print(f"Found {doc_type} {order_number} at skip={skip}")
+                                return pd.json_normalize([order])
+                else:
+                    print(f"Search failed at skip={skip}, status={response.status_code}")
+                    break
+                    
+            except Exception as e:
+                print(f"Error searching at skip={skip}: {e}")
+                continue
+        
+        print(f"Order/quote {order_number} not found after exhaustive search")
+        return pd.DataFrame()
     
     def get_product_details(self, product_id):
         """

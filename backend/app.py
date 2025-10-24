@@ -35,10 +35,11 @@ def health_check():
 def get_quote():
     """
     Main quote endpoint
+    Supports both sales orders (SO-XXXXX) and quotes (Quote-XXXXX)
     
     Expected POST body:
     {
-        "orderNumber": "SO-009537",
+        "orderNumber": "SO-009537" or "Quote-010450",
         "needsAssembly": "yes" or "no",
         "pickupZip": "12345",
         "destinationZip": "67890",
@@ -67,7 +68,7 @@ def get_quote():
         
         # Validate inputs
         if not order_number:
-            return jsonify({'error': 'Order number is required'}), 400
+            return jsonify({'error': 'Order/Quote number is required'}), 400
         if len(pickup_zip) != 5 or not pickup_zip.isdigit():
             return jsonify({'error': 'Invalid pickup ZIP code'}), 400
         if len(destination_zip) != 5 or not destination_zip.isdigit():
@@ -94,11 +95,11 @@ def get_quote():
         dimensions_path = str(current_dir / 'data' / 'Product Dimension.xlsx')
         dimensions_loader = ProductDimensionsLoader(dimensions_path)
         
-        # Step 1: Fetch order from inFlow
+        # Step 1: Fetch order or quote from inFlow
         order_df = inflow_api.search_todays_orders(order_number)
         
         if order_df.empty:
-            return jsonify({'error': f'Order "{order_number}" not found in inFlow'}), 404
+            return jsonify({'error': f'Order/Quote "{order_number}" not found in inFlow'}), 404
         
         # Step 2: Process products
         products_df = inflow_api.process_order_products(order_df)
