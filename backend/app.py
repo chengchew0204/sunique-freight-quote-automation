@@ -64,7 +64,10 @@ def get_quote():
     
     # Handle OPTIONS request (CORS preflight)
     if request.method == 'OPTIONS':
+        print("Handling OPTIONS preflight request")
         return '', 200
+    
+    print(f"Received POST request to /api/quote")
     
     try:
         # Parse request body
@@ -109,10 +112,15 @@ def get_quote():
         dimensions_loader = ProductDimensionsLoader(dimensions_path)
         
         # Step 1: Fetch order or quote from inFlow
+        print(f"Searching for order/quote: {order_number}")
         order_df = inflow_api.search_order_or_quote(order_number)
         
         if order_df.empty:
-            return jsonify({'error': f'"{order_number}" not found in inFlow. Please check the number and try again.'}), 404
+            error_msg = f'"{order_number}" not found in inFlow. Please check the number and try again.'
+            print(f"ERROR: {error_msg}")
+            return jsonify({'error': error_msg}), 404
+        
+        print(f"Successfully found order/quote: {order_number}")
         
         # Step 2: Process products
         products_df = inflow_api.process_order_products(order_df)
