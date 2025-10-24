@@ -109,11 +109,20 @@ def get_quote():
         # Step 3: Merge dimensions
         products_with_dims = dimensions_loader.merge_dimensions(products_df, needs_assembly)
         
+        # Debug logging
+        print(f"DEBUG: Products before merge: {products_df[['name']].to_dict('records')}")
+        print(f"DEBUG: Products after merge: {products_with_dims[['name', 'ProductType', 'Length']].to_dict('records')}")
+        print(f"DEBUG: Products with NaN Length: {products_with_dims[products_with_dims['Length'].isna()][['name', 'ProductType']].to_dict('records')}")
+        
         # Filter out products without dimensions
         valid_products = products_with_dims[products_with_dims['Length'].notna()].copy()
         
         if valid_products.empty:
-            return jsonify({'error': 'No products with valid dimensions found'}), 400
+            # Enhanced error message with debug info
+            missing_products = products_with_dims[products_with_dims['Length'].isna()][['name', 'ProductType']].to_dict('records')
+            error_msg = f'No products with valid dimensions found. Products without dimensions: {missing_products}'
+            print(f"DEBUG: {error_msg}")
+            return jsonify({'error': error_msg}), 400
         
         # Step 4: Calculate pallets
         order_situation = determine_order_situation(valid_products)

@@ -82,6 +82,10 @@ class ProductDimensionsLoader:
         # Extract product type (content after "-") and ensure consistent string type
         products_df['ProductType'] = products_df['name'].str.split('-').str[1].astype(str)
         
+        # Debug logging
+        print(f"DEBUG: Available ProductTypes in dimensions ({needs_assembly}): {sorted(dimensions_table['ProductType'].unique())}")
+        print(f"DEBUG: Product ProductTypes from order: {sorted(products_df['ProductType'].unique())}")
+        
         # Merge dimensions based on product type
         merged_df = pd.merge(
             products_df,
