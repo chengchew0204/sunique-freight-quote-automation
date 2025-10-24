@@ -29,8 +29,8 @@
                 <form id="quoteForm">
                     <div class="form-grid">
                         <div class="form-group">
-                            <label for="orderNumber">Order Number</label>
-                            <input type="text" id="orderNumber" placeholder="e.g., SO-009537" required>
+                            <label for="orderNumber">Order / Quote Number</label>
+                            <input type="text" id="orderNumber" placeholder="e.g., SO-009537 or Quote-001277" required>
                         </div>
                         
                         <div class="form-group">
@@ -143,7 +143,7 @@
                     </div>
                     <div class="processing-step" id="step-fetch">
                         <i class="fas fa-circle-notch fa-spin"></i>
-                        <span>Fetching order from inFlow...</span>
+                        <span>Fetching order/quote from inFlow...</span>
                     </div>
                     <div class="processing-step" id="step-dimensions">
                         <i class="fas fa-circle-notch fa-spin"></i>
@@ -178,7 +178,7 @@
                 <!-- Order Summary -->
                 <div class="results-grid">
                     <div class="result-item">
-                        <div class="result-label">Order Number</div>
+                        <div class="result-label">Order / Quote Number</div>
                         <div class="result-value" id="resultOrderNumber">-</div>
                     </div>
                     <div class="result-item">

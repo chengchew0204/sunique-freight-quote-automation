@@ -28,7 +28,7 @@ def handler(event, context):
     
     Expected POST body:
     {
-        "orderNumber": "SO-009537",
+        "orderNumber": "SO-009537" or "Quote-001277",
         "needsAssembly": "yes" or "no",
         "pickupZip": "12345",
         "destinationZip": "67890",
@@ -36,6 +36,8 @@ def handler(event, context):
         "liftgateService": "yes" or "no",
         "pickupDate": "2024-01-15T08:00:00"
     }
+    
+    Note: orderNumber can accept both Sales Orders (SO-XXXXX) and Quotes (Quote-XXXXX)
     
     Returns:
     {
@@ -78,7 +80,7 @@ def handler(event, context):
         
         # Validate inputs
         if not order_number:
-            raise ValueError("Order number is required")
+            raise ValueError("Order or quote number is required")
         if len(pickup_zip) != 5 or not pickup_zip.isdigit():
             raise ValueError("Invalid pickup ZIP code")
         if len(destination_zip) != 5 or not destination_zip.isdigit():
@@ -105,14 +107,14 @@ def handler(event, context):
         dimensions_path = str(current_dir / 'data' / 'Product Dimension.xlsx')
         dimensions_loader = ProductDimensionsLoader(dimensions_path)
         
-        # Step 1: Fetch order from inFlow
-        order_df = inflow_api.search_todays_orders(order_number)
+        # Step 1: Fetch order or quote from inFlow
+        order_df = inflow_api.search_order_or_quote(order_number)
         
         if order_df.empty:
             return {
                 'statusCode': 404,
                 'headers': headers,
-                'body': json.dumps({'error': f'Order "{order_number}" not found in today\'s orders'})
+                'body': json.dumps({'error': f'"{order_number}" not found in inFlow. Please check the number and try again.'})
             }
         
         # Step 2: Process products

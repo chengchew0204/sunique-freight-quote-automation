@@ -78,6 +78,78 @@ class InflowAPI:
         else:
             raise Exception(f"Failed to fetch order {sales_order_id}")
     
+    def search_quotes(self, quote_number):
+        """
+        Search for a quote by quote number
+        Uses inFlow API quotes endpoint
+        """
+        # Try using quoteNumber filter directly (most efficient)
+        url = (
+            f"{self.base_url}/quotes"
+            f"?count=100&include=lines,customer"
+            f"&filter[quoteNumber]={quote_number}"
+        )
+        
+        try:
+            print(f"Searching for quote: {quote_number}")
+            response = self.fetch_with_retries(url, timeout=60, max_attempts=5)
+            
+            if response.status_code == 200:
+                quotes = response.json()
+                print(f"Response type: {type(quotes)}, length: {len(quotes) if isinstance(quotes, list) else 'N/A'}")
+                
+                # Handle both single object and array responses
+                if isinstance(quotes, dict):
+                    # Single quote returned
+                    if quotes.get('quoteNumber', '').upper() == quote_number.upper():
+                        print(f"Found quote {quote_number} (single result)")
+                        return pd.json_normalize([quotes])
+                elif isinstance(quotes, list):
+                    # Array of quotes
+                    if len(quotes) > 0:
+                        # Filter might return exact match or similar matches
+                        for quote in quotes:
+                            if quote.get('quoteNumber', '').upper() == quote_number.upper():
+                                print(f"Found quote {quote_number} in results")
+                                return pd.json_normalize([quote])
+            else:
+                print(f"Filter search failed, status={response.status_code}")
+        except Exception as e:
+            print(f"Error with filtered search: {e}")
+        
+        # Fallback: Search through recent quotes if filter doesn't work
+        print(f"Filter search didn't find quote, trying pagination...")
+        for skip in range(0, 1000, 100):
+            url = (
+                f"{self.base_url}/quotes"
+                f"?count=100&include=lines,customer&skip={skip}"
+            )
+            
+            try:
+                response = self.fetch_with_retries(url, timeout=60, max_attempts=5)
+                
+                if response.status_code == 200:
+                    quotes = response.json()
+                    if isinstance(quotes, list):
+                        if len(quotes) == 0:
+                            print(f"No more quotes at skip={skip}")
+                            break
+                        
+                        for quote in quotes:
+                            if quote.get('quoteNumber', '').upper() == quote_number.upper():
+                                print(f"Found quote {quote_number} at skip={skip}")
+                                return pd.json_normalize([quote])
+                else:
+                    print(f"Search failed at skip={skip}, status={response.status_code}")
+                    break
+                    
+            except Exception as e:
+                print(f"Error searching at skip={skip}: {e}")
+                continue
+        
+        print(f"Quote {quote_number} not found after exhaustive search")
+        return pd.DataFrame()
+    
     def search_todays_orders(self, order_number):
         """
         Search for an order by order number
@@ -149,6 +221,35 @@ class InflowAPI:
         
         print(f"Order {order_number} not found after exhaustive search")
         return pd.DataFrame()
+    
+    def search_order_or_quote(self, number):
+        """
+        Unified method to search for either an order or quote
+        Automatically detects the type based on the number format
+        
+        Args:
+            number: Order number (e.g. 'SO-009537') or Quote number (e.g. 'Quote-001277')
+            
+        Returns:
+            DataFrame with order/quote data, or empty DataFrame if not found
+        """
+        number = number.strip()
+        
+        # Detect if it's a quote or order based on prefix
+        if number.upper().startswith('QUOTE'):
+            print(f"Detected as quote: {number}")
+            return self.search_quotes(number)
+        elif number.upper().startswith('SO'):
+            print(f"Detected as sales order: {number}")
+            return self.search_todays_orders(number)
+        else:
+            # Try both if prefix is unclear
+            print(f"Prefix unclear, trying as order first: {number}")
+            result = self.search_todays_orders(number)
+            if result.empty:
+                print(f"Not found as order, trying as quote: {number}")
+                result = self.search_quotes(number)
+            return result
     
     def get_product_details(self, product_id):
         """
