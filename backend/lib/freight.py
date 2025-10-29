@@ -146,7 +146,7 @@ def build_chr_quote_request(pallets, pickup_info, delivery_info, ship_date,
     for idx, pallet in enumerate(pallets, start=1):
         item = {
             "description": f"Cabinet pallet {idx}",
-            "freightClass": int(pallet['FreightClass']),
+            "freightClass": float(pallet['FreightClass']),
             "weight": float(pallet['Weight']),
             "weightUnitOfMeasure": "Pounds",
             "packagingLength": float(pallet['Length']),
