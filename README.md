@@ -80,5 +80,7 @@ Check function logs in Netlify Dashboard → Functions → quote
 
 ---
 
-**Version**: 1.0.0
+**Version**: 1.1.0 (Production Environment)
+
+**Current Environment**: Production C.H. Robinson API
 
