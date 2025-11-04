@@ -119,16 +119,6 @@ class ShippingQuoteApp {
             // Call the Netlify serverless function
             const result = await getFreightQuote(formData);
             
-            // Log debug info to browser console
-            if (result.debug) {
-                console.log('='.repeat(60));
-                console.log('API ENVIRONMENT DEBUG INFO:');
-                console.log('='.repeat(60));
-                console.log(`Environment: ${result.debug.environment}`);
-                console.log(`API Base URL: ${result.debug.apiBaseUrl}`);
-                console.log(`Client ID: ${result.debug.clientId}`);
-                console.log('='.repeat(60));
-            }
             
             // Display results
             await this.sleep(500);
@@ -348,4 +338,3 @@ document.addEventListener('DOMContentLoaded', async () => {
     await app.initialize();
     console.log('Shipping Quote App initialized successfully');
 });
-

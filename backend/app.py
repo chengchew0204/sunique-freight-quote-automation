@@ -208,12 +208,7 @@ def get_quote():
             'products': products_list,
             'pallets': pallets_list,
             'quotes': quotes_camelcase,
-            'selectedQuote': selected_quote,
-            'debug': {
-                'environment': chr_environment,
-                'apiBaseUrl': chr_auth.base_url,
-                'clientId': chr_client_id[:10] + '...'
-            }
+            'selectedQuote': selected_quote
         }
         
         return jsonify(response_data), 200
