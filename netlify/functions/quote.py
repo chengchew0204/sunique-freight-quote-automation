@@ -95,12 +95,17 @@ def handler(event, context):
         chr_customer_code = os.environ.get('CHR_CUSTOMER_CODE')
         chr_environment = os.environ.get('CHR_ENVIRONMENT', 'sandbox')
         
+        # Debug log to verify environment
+        print(f"DEBUG: Using CHR Environment: {chr_environment}")
+        print(f"DEBUG: CHR Client ID: {chr_client_id[:10]}...")
+        
         if not all([inflow_company_id, inflow_api_key, chr_client_id, chr_client_secret, chr_customer_code]):
             raise ValueError("Missing required environment variables")
         
         # Initialize API clients
         inflow_api = InflowAPI(inflow_company_id, inflow_api_key)
         chr_auth = CHRobinsonAuth(chr_client_id, chr_client_secret, chr_environment)
+        print(f"DEBUG: CHR Base URL: {chr_auth.base_url}")
         
         # Load product dimensions
         dimensions_path = str(current_dir / 'data' / 'Product Dimension.xlsx')
