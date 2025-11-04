@@ -226,7 +226,12 @@ def handler(event, context):
             'products': products_list,
             'pallets': pallets_list,
             'quotes': quotes,
-            'selectedQuote': selected_quote
+            'selectedQuote': selected_quote,
+            'debug': {
+                'environment': chr_environment,
+                'apiBaseUrl': chr_auth.base_url,
+                'clientId': chr_client_id[:10] + '...'
+            }
         }
         
         return {
